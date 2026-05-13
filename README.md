@@ -3,6 +3,23 @@
 Real-time traffic analysis using YOLOv8 + OpenCV + FastAPI.
 
 ---
+The real-world problem is:
+
+Traffic officers and road authorities often lack an intelligent system that can estimate real traffic congestion conditions and provide practical traffic-management support in real time.
+
+✅ Proposed Solution
+
+TrafficEye is an AI-powered traffic monitoring and decision-support system that uses a YOLOv8 object detection model to analyse traffic videos and estimate traffic congestion conditions.
+
+The system:
+
+Detects vehicles from traffic video footage
+Counts detected vehicles in real time
+Classifies traffic levels
+Estimates queue length
+Calculates traffic clearance time
+Suggests green signal duration for traffic officers
+
 
 ## 📁 Project Structure
 
@@ -15,6 +32,28 @@ traffic-monitor/
     └── index.html         ← Web dashboard (no build needed)
 ``` 
 
+## 🧩 Overall System Flow
+
+```mermaid
+graph TD
+
+A[📹 Traffic Video Upload / CCTV Feed]
+--> B[🧠 YOLOv8 Vehicle Detection]
+
+B --> C[🚗 Vehicle Count + Vehicle Type Detection]
+
+C --> D[📊 Traffic Level Classification]
+
+D --> E[📏 Queue Length Estimation]
+
+E --> F[⏱ Clearance Time Calculation]
+
+F --> G[🚦 Suggested Green Signal Time]
+
+G --> H[🖥 Web Dashboard Display]
+
+H --> I[👮 Traffic Officer Decision Support]
+```
 ---
 
 ## ⚙️ Setup & Run
@@ -99,6 +138,37 @@ Just open `frontend/index.html` in your browser.
 **Tune these** in `backend/main.py` → `get_traffic_level()` based on your road.
 
 ---
+
+✅ Dashboard Features
+
+📹 Uploaded video preview
+🚗 Live vehicle count
+🚦 Current traffic level
+📊 Detection breakdown list
+📈 Traffic history chart
+📏 Queue length display
+⏱ Clearance time display
+🚦 Suggested green time
+⏳ Countdown timer
+📡 Real-time updates via WebSocket
+
+📚 System Workflow Summary
+
+Traffic Video / CCTV Feed
+        ↓
+YOLOv8 Vehicle Detection
+        ↓
+Vehicle Count + Vehicle Type Detection
+        ↓
+Traffic Level Classification
+        ↓
+Queue Length Estimation
+        ↓
+Clearance Time Calculation
+        ↓
+Suggested Green Signal Time
+        ↓
+Traffic Officer Decision Support
 
 ## 🔧 Configuration
 
