@@ -1,0 +1,210 @@
+{
+  "video": "clip_04.mp4",
+  "source_fps": 30.0,
+  "profile_scores": {
+    "profile_a_original": "good=309 inliers=262",
+    "profile_b_ambulance_framing": "good=178 inliers=131"
+  },
+  "selected_profile": "profile_a_original",
+  "normal_densest_frame": {
+    "frame_idx": 2130,
+    "time_s": 71.0,
+    "vehicle_count": 4,
+    "vehicle_breakdown": {
+      "Motorcycle": 4
+    },
+    "total_detected_raw": 7,
+    "in_annotated_video_grid": true
+  },
+  "all_ambulance_candidates": [
+    {
+      "frame_idx": 1390,
+      "time_s": 46.333,
+      "conf": 0.42,
+      "bbox": [
+        196,
+        417,
+        197,
+        192
+      ],
+      "bottom_center": [
+        294.5,
+        609
+      ],
+      "roi_vehicle_count_this_frame": 1,
+      "all_labels_this_frame": [
+        "Ambulance"
+      ],
+      "in_annotated_video_grid": false,
+      "annotated_video_playback_time_s": null
+    },
+    {
+      "frame_idx": 1470,
+      "time_s": 49.0,
+      "conf": 0.45,
+      "bbox": [
+        281,
+        363,
+        201,
+        234
+      ],
+      "bottom_center": [
+        381.5,
+        597
+      ],
+      "roi_vehicle_count_this_frame": 2,
+      "all_labels_this_frame": [
+        "Motorcycle",
+        "Ambulance"
+      ],
+      "in_annotated_video_grid": true,
+      "annotated_video_playback_time_s": 49.0
+    },
+    {
+      "frame_idx": 1500,
+      "time_s": 50.0,
+      "conf": 0.62,
+      "bbox": [
+        261,
+        398,
+        191,
+        221
+      ],
+      "bottom_center": [
+        356.5,
+        619
+      ],
+      "roi_vehicle_count_this_frame": 1,
+      "all_labels_this_frame": [
+        "Ambulance"
+      ],
+      "in_annotated_video_grid": true,
+      "annotated_video_playback_time_s": 50.0
+    },
+    {
+      "frame_idx": 1580,
+      "time_s": 52.667,
+      "conf": 0.71,
+      "bbox": [
+        190,
+        422,
+        241,
+        228
+      ],
+      "bottom_center": [
+        310.5,
+        650
+      ],
+      "roi_vehicle_count_this_frame": 1,
+      "all_labels_this_frame": [
+        "Ambulance"
+      ],
+      "in_annotated_video_grid": false,
+      "annotated_video_playback_time_s": null
+    },
+    {
+      "frame_idx": 1600,
+      "time_s": 53.333,
+      "conf": 0.54,
+      "bbox": [
+        163,
+        435,
+        260,
+        229
+      ],
+      "bottom_center": [
+        293.0,
+        664
+      ],
+      "roi_vehicle_count_this_frame": 1,
+      "all_labels_this_frame": [
+        "Ambulance"
+      ],
+      "in_annotated_video_grid": false,
+      "annotated_video_playback_time_s": null
+    },
+    {
+      "frame_idx": 1610,
+      "time_s": 53.667,
+      "conf": 0.69,
+      "bbox": [
+        149,
+        437,
+        267,
+        241
+      ],
+      "bottom_center": [
+        282.5,
+        678
+      ],
+      "roi_vehicle_count_this_frame": 1,
+      "all_labels_this_frame": [
+        "Ambulance"
+      ],
+      "in_annotated_video_grid": false,
+      "annotated_video_playback_time_s": null
+    },
+    {
+      "frame_idx": 1620,
+      "time_s": 54.0,
+      "conf": 0.54,
+      "bbox": [
+        133,
+        438,
+        277,
+        246
+      ],
+      "bottom_center": [
+        271.5,
+        684
+      ],
+      "roi_vehicle_count_this_frame": 2,
+      "all_labels_this_frame": [
+        "Bus",
+        "Ambulance"
+      ],
+      "in_annotated_video_grid": true,
+      "annotated_video_playback_time_s": 54.0
+    },
+    {
+      "frame_idx": 1650,
+      "time_s": 55.0,
+      "conf": 0.53,
+      "bbox": [
+        112,
+        448,
+        283,
+        257
+      ],
+      "bottom_center": [
+        253.5,
+        705
+      ],
+      "roi_vehicle_count_this_frame": 3,
+      "all_labels_this_frame": [
+        "Ambulance",
+        "Bus",
+        "Car"
+      ],
+      "in_annotated_video_grid": true,
+      "annotated_video_playback_time_s": 55.0
+    }
+  ],
+  "emergency_winning_frame": {
+    "emergency_best_frame_idx": 1650,
+    "emergency_best_time_s": 55.0,
+    "ordered_vehicle_types": [
+      "Bus",
+      "Ambulance",
+      "Car"
+    ],
+    "queue_result_available": true,
+    "emergency_detected_from_this_frame": true,
+    "emergency_vehicle_type": "Ambulance",
+    "emergency_queue_position": 2,
+    "emergency_position_group": "P2",
+    "emergency_clearance_time_s": 10.2504,
+    "emergency_priority_green_s": 13.37
+  },
+  "annotated_video_sample_interval": 6
+}

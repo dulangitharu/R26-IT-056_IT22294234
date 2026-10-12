@@ -1,0 +1,2 @@
+video_name,vehicle_id,vehicle_type,line_a_frame,line_a_time_s,line_b_frame,line_b_time_s,travel_time_s,speed_mps
+clip_07.mp4,75,Bus,1143,101.481,1309,116.22,14.739,0.475

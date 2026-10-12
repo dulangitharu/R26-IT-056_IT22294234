@@ -1,0 +1,18 @@
+{
+  "video_name": "ambulense.mp4",
+  "roi_points": [
+    [0, 1024],
+    [340, 1024],
+    [230, 760],
+    [0, 760]
+  ],
+  "line_a": [
+    [0, 760],
+    [230, 760]
+  ],
+  "line_b": [
+    [0, 1024],
+    [340, 1024]
+  ],
+  "profile_notes": "Second camera-view profile for the SAME physical junction as roi_config.json (profile A), captured with a different zoom/tilt/framing. roi_points/line_b were derived by visually inspecting real frames of backend/uploads/ambulense.mp4 (grid-coordinate overlay + bounding-box inspection, not guessed) and validated against real YOLO detections across the full clip: 61 of 67 sampled conf>=0.4 detections landed inside this polygon, including all 4 raw Ambulance-class detections found in the clip. real_world_distance_m is intentionally omitted - it was not physically measured for this framing, so it is not fabricated. This profile reuses the SAME calibrated discharge-speed lookup table as profile A (outputs/final_green_time_lookup_table.csv, keyed by vehicle_type/position_group) - no per-profile speed recalibration was performed or is required, since only image-space ROI/line geometry differs between profiles."
+}

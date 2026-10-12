@@ -1,0 +1,7 @@
+video_name,vehicle_id,vehicle_type,line_a_frame,line_a_time_s,line_b_frame,line_b_time_s,travel_time_s,speed_mps
+clip_08.mp4,78,Motorcycle,817,27.256,884,29.491,2.235,3.132
+clip_08.mp4,203,Bus,2117,70.624,2280,76.062,5.438,1.287
+clip_08.mp4,253,Bus,2435,81.233,2555,85.236,4.003,1.749
+clip_08.mp4,327,Car,3339,111.391,3395,113.259,1.868,3.747
+clip_08.mp4,339,Tuktuk,3543,118.196,3600,120.098,1.902,3.68
+clip_08.mp4,342,Bus,3723,124.201,3786,126.303,2.102,3.33

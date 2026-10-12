@@ -1,0 +1,7 @@
+YOLOv8 best.pt metadata (file itself NOT copied - too large, 6+ MB binary weights)
+
+Path (relative to project root): backend/runs2/detect/traffic_monitor/weights/best.pt
+Size (bytes): 6228202
+Size (MB): 5.94
+Last modified: 2026-08-17 16:55:51.000000000 +0530
+MD5: 56c448934dcae32d1974ef22e6a09d35

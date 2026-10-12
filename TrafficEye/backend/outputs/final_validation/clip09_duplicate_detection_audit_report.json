@@ -1,0 +1,2994 @@
+{
+  "roi_in": [
+    {
+      "index": 3,
+      "class": "Truck",
+      "conf": 0.4507,
+      "bbox_x1y1x2y2": [
+        179,
+        529,
+        374,
+        715
+      ],
+      "bbox_width": 195,
+      "bbox_height": 186,
+      "bbox_area": 36270,
+      "bottom_center": [
+        276.5,
+        715
+      ],
+      "distance_to_line_b_px": 1.4,
+      "assigned_queue_position": "P1"
+    },
+    {
+      "index": 0,
+      "class": "Bus",
+      "conf": 0.6554,
+      "bbox_x1y1x2y2": [
+        178,
+        530,
+        378,
+        718
+      ],
+      "bbox_width": 200,
+      "bbox_height": 188,
+      "bbox_area": 37600,
+      "bottom_center": [
+        278.0,
+        718
+      ],
+      "distance_to_line_b_px": 3.52,
+      "assigned_queue_position": "P2"
+    },
+    {
+      "index": 4,
+      "class": "Truck",
+      "conf": 0.4391,
+      "bbox_x1y1x2y2": [
+        389,
+        571,
+        457,
+        662
+      ],
+      "bbox_width": 68,
+      "bbox_height": 91,
+      "bbox_area": 6188,
+      "bottom_center": [
+        423.0,
+        662
+      ],
+      "distance_to_line_b_px": 106.92,
+      "assigned_queue_position": "P3"
+    }
+  ],
+  "roi_out_count": 2,
+  "pairwise_iou": [
+    {
+      "pair": "P1(Truck) vs P2(Bus)",
+      "iou": 0.9545,
+      "intersection_area": 36075,
+      "area_a": 36270,
+      "area_b": 37600,
+      "pct_a_covered_by_b": 99.5,
+      "pct_b_covered_by_a": 95.9,
+      "center_distance_px": 2.5,
+      "bottom_center_distance_px": 3.35
+    },
+    {
+      "pair": "P1(Truck) vs P3(Truck)",
+      "iou": 0.0,
+      "intersection_area": 0,
+      "area_a": 36270,
+      "area_b": 6188,
+      "pct_a_covered_by_b": 0.0,
+      "pct_b_covered_by_a": 0.0,
+      "center_distance_px": 146.6,
+      "bottom_center_distance_px": 155.79
+    },
+    {
+      "pair": "P2(Bus) vs P3(Truck)",
+      "iou": 0.0,
+      "intersection_area": 0,
+      "area_a": 37600,
+      "area_b": 6188,
+      "pct_a_covered_by_b": 0.0,
+      "pct_b_covered_by_a": 0.0,
+      "center_distance_px": 145.19,
+      "bottom_center_distance_px": 155.44
+    }
+  ],
+  "p1": {
+    "index": 3,
+    "class": "Truck",
+    "conf": 0.4507,
+    "bbox_x1y1x2y2": [
+      179,
+      529,
+      374,
+      715
+    ],
+    "bbox_width": 195,
+    "bbox_height": 186,
+    "bbox_area": 36270,
+    "bottom_center": [
+      276.5,
+      715
+    ],
+    "distance_to_line_b_px": 1.4,
+    "assigned_queue_position": "P1"
+  },
+  "p2": {
+    "index": 0,
+    "class": "Bus",
+    "conf": 0.6554,
+    "bbox_x1y1x2y2": [
+      178,
+      530,
+      378,
+      718
+    ],
+    "bbox_width": 200,
+    "bbox_height": 188,
+    "bbox_area": 37600,
+    "bottom_center": [
+      278.0,
+      718
+    ],
+    "distance_to_line_b_px": 3.52,
+    "assigned_queue_position": "P2"
+  },
+  "p3": {
+    "index": 4,
+    "class": "Truck",
+    "conf": 0.4391,
+    "bbox_x1y1x2y2": [
+      389,
+      571,
+      457,
+      662
+    ],
+    "bbox_width": 68,
+    "bbox_height": 91,
+    "bbox_area": 6188,
+    "bottom_center": [
+      423.0,
+      662
+    ],
+    "distance_to_line_b_px": 106.92,
+    "assigned_queue_position": "P3"
+  },
+  "temporal_window_records": [
+    {
+      "frame": 1170,
+      "track_id": 88,
+      "class": "Car",
+      "conf": 0.7689,
+      "bbox": [
+        290,
+        586,
+        393,
+        669
+      ],
+      "bottom_center": [
+        341.5,
+        669
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1171,
+      "track_id": 88,
+      "class": "Car",
+      "conf": 0.7861,
+      "bbox": [
+        289,
+        587,
+        391,
+        669
+      ],
+      "bottom_center": [
+        340.0,
+        669
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1172,
+      "track_id": 88,
+      "class": "Car",
+      "conf": 0.7865,
+      "bbox": [
+        288,
+        588,
+        390,
+        669
+      ],
+      "bottom_center": [
+        339.0,
+        669
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1173,
+      "track_id": 88,
+      "class": "Car",
+      "conf": 0.7412,
+      "bbox": [
+        287,
+        589,
+        389,
+        670
+      ],
+      "bottom_center": [
+        338.0,
+        670
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1174,
+      "track_id": 88,
+      "class": "Car",
+      "conf": 0.7433,
+      "bbox": [
+        286,
+        589,
+        389,
+        671
+      ],
+      "bottom_center": [
+        337.5,
+        671
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1175,
+      "track_id": 88,
+      "class": "Car",
+      "conf": 0.7768,
+      "bbox": [
+        285,
+        589,
+        388,
+        671
+      ],
+      "bottom_center": [
+        336.5,
+        671
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1176,
+      "track_id": 88,
+      "class": "Car",
+      "conf": 0.7981,
+      "bbox": [
+        285,
+        590,
+        387,
+        670
+      ],
+      "bottom_center": [
+        336.0,
+        670
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1177,
+      "track_id": 88,
+      "class": "Car",
+      "conf": 0.7973,
+      "bbox": [
+        284,
+        590,
+        386,
+        671
+      ],
+      "bottom_center": [
+        335.0,
+        671
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1178,
+      "track_id": 88,
+      "class": "Car",
+      "conf": 0.7727,
+      "bbox": [
+        283,
+        590,
+        387,
+        672
+      ],
+      "bottom_center": [
+        335.0,
+        672
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1179,
+      "track_id": 88,
+      "class": "Car",
+      "conf": 0.767,
+      "bbox": [
+        282,
+        590,
+        387,
+        674
+      ],
+      "bottom_center": [
+        334.5,
+        674
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1180,
+      "track_id": 88,
+      "class": "Car",
+      "conf": 0.7712,
+      "bbox": [
+        280,
+        591,
+        386,
+        675
+      ],
+      "bottom_center": [
+        333.0,
+        675
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1182,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.6835,
+      "bbox": [
+        212,
+        515,
+        394,
+        694
+      ],
+      "bottom_center": [
+        303.0,
+        694
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1182,
+      "track_id": 98,
+      "class": "Motorcycle",
+      "conf": 0.4728,
+      "bbox": [
+        285,
+        659,
+        336,
+        764
+      ],
+      "bottom_center": [
+        310.5,
+        764
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1183,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.6736,
+      "bbox": [
+        211,
+        515,
+        397,
+        697
+      ],
+      "bottom_center": [
+        304.0,
+        697
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1184,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.6961,
+      "bbox": [
+        211,
+        516,
+        395,
+        697
+      ],
+      "bottom_center": [
+        303.0,
+        697
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1185,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.6246,
+      "bbox": [
+        213,
+        516,
+        395,
+        695
+      ],
+      "bottom_center": [
+        304.0,
+        695
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1186,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.6082,
+      "bbox": [
+        214,
+        516,
+        395,
+        694
+      ],
+      "bottom_center": [
+        304.5,
+        694
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1187,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.6074,
+      "bbox": [
+        215,
+        516,
+        394,
+        692
+      ],
+      "bottom_center": [
+        304.5,
+        692
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1188,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.5662,
+      "bbox": [
+        215,
+        516,
+        395,
+        692
+      ],
+      "bottom_center": [
+        305.0,
+        692
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1189,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.4491,
+      "bbox": [
+        215,
+        516,
+        395,
+        692
+      ],
+      "bottom_center": [
+        305.0,
+        692
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1192,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.5091,
+      "bbox": [
+        212,
+        522,
+        385,
+        692
+      ],
+      "bottom_center": [
+        298.5,
+        692
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1193,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.5328,
+      "bbox": [
+        211,
+        526,
+        384,
+        697
+      ],
+      "bottom_center": [
+        297.5,
+        697
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1194,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.4557,
+      "bbox": [
+        209,
+        523,
+        383,
+        696
+      ],
+      "bottom_center": [
+        296.0,
+        696
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1195,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.4081,
+      "bbox": [
+        206,
+        520,
+        384,
+        698
+      ],
+      "bottom_center": [
+        295.0,
+        698
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1195,
+      "track_id": 98,
+      "class": "Motorcycle",
+      "conf": 0.4345,
+      "bbox": [
+        276,
+        663,
+        336,
+        788
+      ],
+      "bottom_center": [
+        306.0,
+        788
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1196,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.481,
+      "bbox": [
+        206,
+        520,
+        383,
+        698
+      ],
+      "bottom_center": [
+        294.5,
+        698
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1196,
+      "track_id": 98,
+      "class": "Motorcycle",
+      "conf": 0.4342,
+      "bbox": [
+        276,
+        665,
+        336,
+        788
+      ],
+      "bottom_center": [
+        306.0,
+        788
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1197,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.4603,
+      "bbox": [
+        208,
+        524,
+        380,
+        697
+      ],
+      "bottom_center": [
+        294.0,
+        697
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1198,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.5081,
+      "bbox": [
+        209,
+        525,
+        380,
+        697
+      ],
+      "bottom_center": [
+        294.5,
+        697
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1199,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.6008,
+      "bbox": [
+        212,
+        526,
+        381,
+        697
+      ],
+      "bottom_center": [
+        296.5,
+        697
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1200,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.6393,
+      "bbox": [
+        213,
+        526,
+        384,
+        697
+      ],
+      "bottom_center": [
+        298.5,
+        697
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1201,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.6751,
+      "bbox": [
+        213,
+        527,
+        386,
+        700
+      ],
+      "bottom_center": [
+        299.5,
+        700
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1201,
+      "track_id": 98,
+      "class": "Motorcycle",
+      "conf": 0.4661,
+      "bbox": [
+        272,
+        664,
+        336,
+        795
+      ],
+      "bottom_center": [
+        304.0,
+        795
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1202,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.7229,
+      "bbox": [
+        213,
+        528,
+        387,
+        701
+      ],
+      "bottom_center": [
+        300.0,
+        701
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1202,
+      "track_id": 98,
+      "class": "Motorcycle",
+      "conf": 0.4159,
+      "bbox": [
+        271,
+        664,
+        335,
+        794
+      ],
+      "bottom_center": [
+        303.0,
+        794
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1203,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.6866,
+      "bbox": [
+        211,
+        527,
+        387,
+        701
+      ],
+      "bottom_center": [
+        299.0,
+        701
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1203,
+      "track_id": 98,
+      "class": "Motorcycle",
+      "conf": 0.4159,
+      "bbox": [
+        269,
+        666,
+        333,
+        794
+      ],
+      "bottom_center": [
+        301.0,
+        794
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1204,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.6717,
+      "bbox": [
+        211,
+        528,
+        386,
+        701
+      ],
+      "bottom_center": [
+        298.5,
+        701
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1204,
+      "track_id": 98,
+      "class": "Motorcycle",
+      "conf": 0.463,
+      "bbox": [
+        267,
+        673,
+        330,
+        799
+      ],
+      "bottom_center": [
+        298.5,
+        799
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1205,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.666,
+      "bbox": [
+        211,
+        528,
+        385,
+        699
+      ],
+      "bottom_center": [
+        298.0,
+        699
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1205,
+      "track_id": 98,
+      "class": "Motorcycle",
+      "conf": 0.476,
+      "bbox": [
+        265,
+        675,
+        329,
+        804
+      ],
+      "bottom_center": [
+        297.0,
+        804
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1206,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.4875,
+      "bbox": [
+        206,
+        526,
+        383,
+        700
+      ],
+      "bottom_center": [
+        294.5,
+        700
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1206,
+      "track_id": 98,
+      "class": "Motorcycle",
+      "conf": 0.6658,
+      "bbox": [
+        264,
+        679,
+        327,
+        804
+      ],
+      "bottom_center": [
+        295.5,
+        804
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1207,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.4253,
+      "bbox": [
+        204,
+        527,
+        381,
+        701
+      ],
+      "bottom_center": [
+        292.5,
+        701
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1207,
+      "track_id": 98,
+      "class": "Motorcycle",
+      "conf": 0.6707,
+      "bbox": [
+        263,
+        677,
+        326,
+        804
+      ],
+      "bottom_center": [
+        294.5,
+        804
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1208,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.4464,
+      "bbox": [
+        202,
+        527,
+        380,
+        701
+      ],
+      "bottom_center": [
+        291.0,
+        701
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1208,
+      "track_id": 98,
+      "class": "Motorcycle",
+      "conf": 0.5742,
+      "bbox": [
+        262,
+        682,
+        323,
+        804
+      ],
+      "bottom_center": [
+        292.5,
+        804
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1208,
+      "track_id": 104,
+      "class": "Truck",
+      "conf": 0.4359,
+      "bbox": [
+        206,
+        527,
+        376,
+        699
+      ],
+      "bottom_center": [
+        291.0,
+        699
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1209,
+      "track_id": 98,
+      "class": "Motorcycle",
+      "conf": 0.5243,
+      "bbox": [
+        260,
+        681,
+        320,
+        801
+      ],
+      "bottom_center": [
+        290.0,
+        801
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1210,
+      "track_id": 98,
+      "class": "Motorcycle",
+      "conf": 0.4971,
+      "bbox": [
+        258,
+        682,
+        317,
+        801
+      ],
+      "bottom_center": [
+        287.5,
+        801
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1210,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.6399,
+      "bbox": [
+        203,
+        527,
+        379,
+        700
+      ],
+      "bottom_center": [
+        291.0,
+        700
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1211,
+      "track_id": 98,
+      "class": "Motorcycle",
+      "conf": 0.5052,
+      "bbox": [
+        256,
+        683,
+        316,
+        801
+      ],
+      "bottom_center": [
+        286.0,
+        801
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1211,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.65,
+      "bbox": [
+        202,
+        526,
+        380,
+        702
+      ],
+      "bottom_center": [
+        291.0,
+        702
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1212,
+      "track_id": 98,
+      "class": "Motorcycle",
+      "conf": 0.6764,
+      "bbox": [
+        255,
+        684,
+        314,
+        803
+      ],
+      "bottom_center": [
+        284.5,
+        803
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1212,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.5149,
+      "bbox": [
+        200,
+        526,
+        381,
+        704
+      ],
+      "bottom_center": [
+        290.5,
+        704
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1213,
+      "track_id": 98,
+      "class": "Motorcycle",
+      "conf": 0.6223,
+      "bbox": [
+        252,
+        684,
+        311,
+        804
+      ],
+      "bottom_center": [
+        281.5,
+        804
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1213,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.482,
+      "bbox": [
+        198,
+        525,
+        385,
+        710
+      ],
+      "bottom_center": [
+        291.5,
+        710
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1214,
+      "track_id": 98,
+      "class": "Motorcycle",
+      "conf": 0.6228,
+      "bbox": [
+        250,
+        688,
+        309,
+        806
+      ],
+      "bottom_center": [
+        279.5,
+        806
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1214,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.4401,
+      "bbox": [
+        198,
+        525,
+        384,
+        711
+      ],
+      "bottom_center": [
+        291.0,
+        711
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1215,
+      "track_id": 98,
+      "class": "Motorcycle",
+      "conf": 0.6167,
+      "bbox": [
+        248,
+        687,
+        308,
+        808
+      ],
+      "bottom_center": [
+        278.0,
+        808
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1215,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.4973,
+      "bbox": [
+        198,
+        524,
+        384,
+        712
+      ],
+      "bottom_center": [
+        291.0,
+        712
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1216,
+      "track_id": 98,
+      "class": "Motorcycle",
+      "conf": 0.6203,
+      "bbox": [
+        246,
+        689,
+        306,
+        809
+      ],
+      "bottom_center": [
+        276.0,
+        809
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1216,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.5088,
+      "bbox": [
+        198,
+        525,
+        385,
+        715
+      ],
+      "bottom_center": [
+        291.5,
+        715
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1217,
+      "track_id": 98,
+      "class": "Motorcycle",
+      "conf": 0.5954,
+      "bbox": [
+        244,
+        690,
+        304,
+        811
+      ],
+      "bottom_center": [
+        274.0,
+        811
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1217,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.5637,
+      "bbox": [
+        198,
+        525,
+        384,
+        715
+      ],
+      "bottom_center": [
+        291.0,
+        715
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1217,
+      "track_id": 106,
+      "class": "Truck",
+      "conf": 0.4191,
+      "bbox": [
+        203,
+        524,
+        376,
+        713
+      ],
+      "bottom_center": [
+        289.5,
+        713
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1218,
+      "track_id": 98,
+      "class": "Motorcycle",
+      "conf": 0.7158,
+      "bbox": [
+        242,
+        699,
+        300,
+        813
+      ],
+      "bottom_center": [
+        271.0,
+        813
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1218,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.5236,
+      "bbox": [
+        197,
+        526,
+        382,
+        716
+      ],
+      "bottom_center": [
+        289.5,
+        716
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1218,
+      "track_id": 106,
+      "class": "Truck",
+      "conf": 0.419,
+      "bbox": [
+        203,
+        525,
+        375,
+        713
+      ],
+      "bottom_center": [
+        289.0,
+        713
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1219,
+      "track_id": 98,
+      "class": "Motorcycle",
+      "conf": 0.4815,
+      "bbox": [
+        238,
+        695,
+        300,
+        815
+      ],
+      "bottom_center": [
+        269.0,
+        815
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1219,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.6939,
+      "bbox": [
+        196,
+        527,
+        380,
+        716
+      ],
+      "bottom_center": [
+        288.0,
+        716
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1220,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.655,
+      "bbox": [
+        193,
+        528,
+        380,
+        719
+      ],
+      "bottom_center": [
+        286.5,
+        719
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1221,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.7292,
+      "bbox": [
+        192,
+        528,
+        379,
+        719
+      ],
+      "bottom_center": [
+        285.5,
+        719
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1221,
+      "track_id": 98,
+      "class": "Motorcycle",
+      "conf": 0.4137,
+      "bbox": [
+        225,
+        688,
+        294,
+        821
+      ],
+      "bottom_center": [
+        259.5,
+        821
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1222,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.7149,
+      "bbox": [
+        191,
+        529,
+        378,
+        719
+      ],
+      "bottom_center": [
+        284.5,
+        719
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1223,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.6932,
+      "bbox": [
+        190,
+        529,
+        378,
+        719
+      ],
+      "bottom_center": [
+        284.0,
+        719
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1224,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.708,
+      "bbox": [
+        190,
+        529,
+        379,
+        720
+      ],
+      "bottom_center": [
+        284.5,
+        720
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1225,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.6854,
+      "bbox": [
+        189,
+        529,
+        380,
+        723
+      ],
+      "bottom_center": [
+        284.5,
+        723
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1226,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.6531,
+      "bbox": [
+        188,
+        527,
+        380,
+        722
+      ],
+      "bottom_center": [
+        284.0,
+        722
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1227,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.6587,
+      "bbox": [
+        188,
+        528,
+        378,
+        721
+      ],
+      "bottom_center": [
+        283.0,
+        721
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1228,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.6923,
+      "bbox": [
+        186,
+        528,
+        375,
+        719
+      ],
+      "bottom_center": [
+        280.5,
+        719
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1229,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.5915,
+      "bbox": [
+        186,
+        528,
+        375,
+        718
+      ],
+      "bottom_center": [
+        280.5,
+        718
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1230,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.6554,
+      "bbox": [
+        184,
+        529,
+        373,
+        718
+      ],
+      "bottom_center": [
+        278.5,
+        718
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1231,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.6057,
+      "bbox": [
+        183,
+        529,
+        371,
+        716
+      ],
+      "bottom_center": [
+        277.0,
+        716
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1231,
+      "track_id": 109,
+      "class": "Bus",
+      "conf": 0.5642,
+      "bbox": [
+        179,
+        530,
+        376,
+        717
+      ],
+      "bottom_center": [
+        277.5,
+        717
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1232,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.6459,
+      "bbox": [
+        183,
+        529,
+        371,
+        716
+      ],
+      "bottom_center": [
+        277.0,
+        716
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1232,
+      "track_id": 109,
+      "class": "Bus",
+      "conf": 0.4638,
+      "bbox": [
+        179,
+        530,
+        378,
+        719
+      ],
+      "bottom_center": [
+        278.5,
+        719
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1233,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.6453,
+      "bbox": [
+        182,
+        529,
+        371,
+        716
+      ],
+      "bottom_center": [
+        276.5,
+        716
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1234,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.5635,
+      "bbox": [
+        184,
+        530,
+        370,
+        714
+      ],
+      "bottom_center": [
+        277.0,
+        714
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1235,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.7225,
+      "bbox": [
+        187,
+        531,
+        369,
+        710
+      ],
+      "bottom_center": [
+        278.0,
+        710
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1235,
+      "track_id": 110,
+      "class": "Truck",
+      "conf": 0.4048,
+      "bbox": [
+        183,
+        531,
+        373,
+        710
+      ],
+      "bottom_center": [
+        278.0,
+        710
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1236,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.5133,
+      "bbox": [
+        186,
+        531,
+        369,
+        710
+      ],
+      "bottom_center": [
+        277.5,
+        710
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1236,
+      "track_id": 110,
+      "class": "Bus",
+      "conf": 0.6635,
+      "bbox": [
+        183,
+        531,
+        372,
+        709
+      ],
+      "bottom_center": [
+        277.5,
+        709
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1238,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.7534,
+      "bbox": [
+        184,
+        532,
+        369,
+        713
+      ],
+      "bottom_center": [
+        276.5,
+        713
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1239,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.7594,
+      "bbox": [
+        182,
+        532,
+        369,
+        715
+      ],
+      "bottom_center": [
+        275.5,
+        715
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1240,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.8362,
+      "bbox": [
+        182,
+        534,
+        369,
+        716
+      ],
+      "bottom_center": [
+        275.5,
+        716
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1241,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.7989,
+      "bbox": [
+        182,
+        535,
+        369,
+        717
+      ],
+      "bottom_center": [
+        275.5,
+        717
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1242,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.8477,
+      "bbox": [
+        182,
+        537,
+        369,
+        718
+      ],
+      "bottom_center": [
+        275.5,
+        718
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1243,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.8312,
+      "bbox": [
+        182,
+        538,
+        369,
+        719
+      ],
+      "bottom_center": [
+        275.5,
+        719
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1244,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.7892,
+      "bbox": [
+        182,
+        539,
+        369,
+        720
+      ],
+      "bottom_center": [
+        275.5,
+        720
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1245,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.6007,
+      "bbox": [
+        182,
+        540,
+        369,
+        721
+      ],
+      "bottom_center": [
+        275.5,
+        721
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1246,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.6859,
+      "bbox": [
+        181,
+        538,
+        370,
+        720
+      ],
+      "bottom_center": [
+        275.5,
+        720
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1247,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.6514,
+      "bbox": [
+        180,
+        536,
+        371,
+        722
+      ],
+      "bottom_center": [
+        275.5,
+        722
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1248,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.7679,
+      "bbox": [
+        179,
+        536,
+        372,
+        723
+      ],
+      "bottom_center": [
+        275.5,
+        723
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1249,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.6189,
+      "bbox": [
+        177,
+        535,
+        373,
+        726
+      ],
+      "bottom_center": [
+        275.0,
+        726
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1250,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.502,
+      "bbox": [
+        176,
+        535,
+        373,
+        728
+      ],
+      "bottom_center": [
+        274.5,
+        728
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1250,
+      "track_id": 113,
+      "class": "Bus",
+      "conf": 0.4658,
+      "bbox": [
+        179,
+        539,
+        371,
+        728
+      ],
+      "bottom_center": [
+        275.0,
+        728
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1251,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.491,
+      "bbox": [
+        176,
+        537,
+        372,
+        729
+      ],
+      "bottom_center": [
+        274.0,
+        729
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1251,
+      "track_id": 113,
+      "class": "Bus",
+      "conf": 0.5313,
+      "bbox": [
+        179,
+        542,
+        370,
+        729
+      ],
+      "bottom_center": [
+        274.5,
+        729
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1252,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.605,
+      "bbox": [
+        176,
+        538,
+        371,
+        730
+      ],
+      "bottom_center": [
+        273.5,
+        730
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1252,
+      "track_id": 113,
+      "class": "Bus",
+      "conf": 0.5408,
+      "bbox": [
+        178,
+        542,
+        368,
+        729
+      ],
+      "bottom_center": [
+        273.0,
+        729
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1253,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.6314,
+      "bbox": [
+        174,
+        539,
+        371,
+        732
+      ],
+      "bottom_center": [
+        272.5,
+        732
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1253,
+      "track_id": 113,
+      "class": "Bus",
+      "conf": 0.4531,
+      "bbox": [
+        177,
+        544,
+        368,
+        731
+      ],
+      "bottom_center": [
+        272.5,
+        731
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1254,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.5649,
+      "bbox": [
+        173,
+        540,
+        370,
+        733
+      ],
+      "bottom_center": [
+        271.5,
+        733
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1254,
+      "track_id": 113,
+      "class": "Bus",
+      "conf": 0.5707,
+      "bbox": [
+        176,
+        545,
+        367,
+        732
+      ],
+      "bottom_center": [
+        271.5,
+        732
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1255,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.5488,
+      "bbox": [
+        173,
+        540,
+        369,
+        733
+      ],
+      "bottom_center": [
+        271.0,
+        733
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1255,
+      "track_id": 113,
+      "class": "Bus",
+      "conf": 0.5641,
+      "bbox": [
+        175,
+        545,
+        367,
+        733
+      ],
+      "bottom_center": [
+        271.0,
+        733
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1256,
+      "track_id": 97,
+      "class": "Truck",
+      "conf": 0.5058,
+      "bbox": [
+        171,
+        541,
+        367,
+        734
+      ],
+      "bottom_center": [
+        269.0,
+        734
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1256,
+      "track_id": 113,
+      "class": "Bus",
+      "conf": 0.4926,
+      "bbox": [
+        173,
+        545,
+        366,
+        733
+      ],
+      "bottom_center": [
+        269.5,
+        733
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1258,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.5964,
+      "bbox": [
+        170,
+        544,
+        363,
+        734
+      ],
+      "bottom_center": [
+        266.5,
+        734
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1259,
+      "track_id": 114,
+      "class": "Truck",
+      "conf": 0.4145,
+      "bbox": [
+        166,
+        541,
+        364,
+        734
+      ],
+      "bottom_center": [
+        265.0,
+        734
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1259,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.637,
+      "bbox": [
+        169,
+        544,
+        363,
+        735
+      ],
+      "bottom_center": [
+        266.0,
+        735
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1261,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.7869,
+      "bbox": [
+        166,
+        545,
+        362,
+        737
+      ],
+      "bottom_center": [
+        264.0,
+        737
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1262,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.7552,
+      "bbox": [
+        165,
+        546,
+        362,
+        738
+      ],
+      "bottom_center": [
+        263.5,
+        738
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1263,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.8113,
+      "bbox": [
+        163,
+        545,
+        361,
+        738
+      ],
+      "bottom_center": [
+        262.0,
+        738
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1264,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.8149,
+      "bbox": [
+        162,
+        546,
+        360,
+        739
+      ],
+      "bottom_center": [
+        261.0,
+        739
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1265,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.7996,
+      "bbox": [
+        159,
+        545,
+        360,
+        741
+      ],
+      "bottom_center": [
+        259.5,
+        741
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1266,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.8202,
+      "bbox": [
+        158,
+        545,
+        359,
+        742
+      ],
+      "bottom_center": [
+        258.5,
+        742
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1267,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.8071,
+      "bbox": [
+        156,
+        547,
+        358,
+        744
+      ],
+      "bottom_center": [
+        257.0,
+        744
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1268,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.8069,
+      "bbox": [
+        155,
+        549,
+        356,
+        747
+      ],
+      "bottom_center": [
+        255.5,
+        747
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1269,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.6926,
+      "bbox": [
+        152,
+        550,
+        355,
+        750
+      ],
+      "bottom_center": [
+        253.5,
+        750
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1270,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.8043,
+      "bbox": [
+        149,
+        551,
+        353,
+        752
+      ],
+      "bottom_center": [
+        251.0,
+        752
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1271,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.8419,
+      "bbox": [
+        148,
+        551,
+        352,
+        753
+      ],
+      "bottom_center": [
+        250.0,
+        753
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1272,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.8237,
+      "bbox": [
+        147,
+        552,
+        351,
+        754
+      ],
+      "bottom_center": [
+        249.0,
+        754
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1273,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.8406,
+      "bbox": [
+        147,
+        552,
+        350,
+        753
+      ],
+      "bottom_center": [
+        248.5,
+        753
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1274,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.8466,
+      "bbox": [
+        145,
+        552,
+        349,
+        754
+      ],
+      "bottom_center": [
+        247.0,
+        754
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1275,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.8472,
+      "bbox": [
+        144,
+        552,
+        348,
+        754
+      ],
+      "bottom_center": [
+        246.0,
+        754
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1276,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.8719,
+      "bbox": [
+        142,
+        551,
+        348,
+        754
+      ],
+      "bottom_center": [
+        245.0,
+        754
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1277,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.8288,
+      "bbox": [
+        137,
+        551,
+        349,
+        759
+      ],
+      "bottom_center": [
+        243.0,
+        759
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1277,
+      "track_id": 108,
+      "class": "Truck",
+      "conf": 0.5361,
+      "bbox": [
+        329,
+        545,
+        427,
+        669
+      ],
+      "bottom_center": [
+        378.0,
+        669
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1278,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.885,
+      "bbox": [
+        133,
+        551,
+        347,
+        762
+      ],
+      "bottom_center": [
+        240.0,
+        762
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1278,
+      "track_id": 108,
+      "class": "Truck",
+      "conf": 0.5347,
+      "bbox": [
+        330,
+        544,
+        424,
+        669
+      ],
+      "bottom_center": [
+        377.0,
+        669
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1279,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.9129,
+      "bbox": [
+        131,
+        551,
+        344,
+        760
+      ],
+      "bottom_center": [
+        237.5,
+        760
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1279,
+      "track_id": 108,
+      "class": "Truck",
+      "conf": 0.5077,
+      "bbox": [
+        331,
+        543,
+        422,
+        670
+      ],
+      "bottom_center": [
+        376.5,
+        670
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1280,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.8999,
+      "bbox": [
+        129,
+        552,
+        342,
+        760
+      ],
+      "bottom_center": [
+        235.5,
+        760
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1280,
+      "track_id": 108,
+      "class": "Truck",
+      "conf": 0.5565,
+      "bbox": [
+        331,
+        543,
+        421,
+        670
+      ],
+      "bottom_center": [
+        376.0,
+        670
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1281,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.8892,
+      "bbox": [
+        128,
+        552,
+        342,
+        760
+      ],
+      "bottom_center": [
+        235.0,
+        760
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1281,
+      "track_id": 108,
+      "class": "Truck",
+      "conf": 0.4862,
+      "bbox": [
+        332,
+        542,
+        419,
+        670
+      ],
+      "bottom_center": [
+        375.5,
+        670
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1282,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.9116,
+      "bbox": [
+        127,
+        552,
+        342,
+        761
+      ],
+      "bottom_center": [
+        234.5,
+        761
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1283,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.9129,
+      "bbox": [
+        124,
+        553,
+        342,
+        763
+      ],
+      "bottom_center": [
+        233.0,
+        763
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1284,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.9137,
+      "bbox": [
+        122,
+        554,
+        340,
+        763
+      ],
+      "bottom_center": [
+        231.0,
+        763
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1285,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.9156,
+      "bbox": [
+        120,
+        555,
+        339,
+        764
+      ],
+      "bottom_center": [
+        229.5,
+        764
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1286,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.9259,
+      "bbox": [
+        118,
+        556,
+        337,
+        764
+      ],
+      "bottom_center": [
+        227.5,
+        764
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1287,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.9271,
+      "bbox": [
+        118,
+        557,
+        336,
+        764
+      ],
+      "bottom_center": [
+        227.0,
+        764
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1288,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.9241,
+      "bbox": [
+        117,
+        558,
+        335,
+        766
+      ],
+      "bottom_center": [
+        226.0,
+        766
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1289,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.921,
+      "bbox": [
+        113,
+        558,
+        337,
+        770
+      ],
+      "bottom_center": [
+        225.0,
+        770
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    },
+    {
+      "frame": 1290,
+      "track_id": 97,
+      "class": "Bus",
+      "conf": 0.9052,
+      "bbox": [
+        109,
+        559,
+        335,
+        774
+      ],
+      "bottom_center": [
+        222.0,
+        774
+      ],
+      "near_p1_region": true,
+      "near_p2_region": true
+    }
+  ],
+  "overlay_image": "clip09_duplicate_detection_audit.jpg",
+  "model_nms_settings": {
+    "iou": null,
+    "agnostic_nms": null,
+    "max_det": null
+  }
+}
