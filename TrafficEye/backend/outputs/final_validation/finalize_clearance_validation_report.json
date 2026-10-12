@@ -1,0 +1,184 @@
+[
+  {
+    "clip_name": "clip_01.mp4",
+    "snapshot_frame": 280,
+    "snapshot_time_s": 26.736,
+    "fps": 10.473,
+    "vehicle_count": 4,
+    "ordered_vehicle_types": [
+      "Car",
+      "Car",
+      "Motorcycle",
+      "Car"
+    ],
+    "position_groups": [
+      "P1",
+      "P2",
+      "P3-4",
+      "P3-4"
+    ],
+    "predicted_clearance_s": 6.1601,
+    "predicted_green_s": 9.28,
+    "last_queue_position": "P4",
+    "last_vehicle_type": "Car",
+    "last_vehicle_bbox_at_snapshot": [
+      390,
+      430,
+      99,
+      102
+    ],
+    "last_vehicle_bottom_center_at_snapshot": [
+      439.5,
+      532
+    ],
+    "snapshot_file": "validation_clip_01_snapshot.jpg",
+    "tracking_result": {
+      "status": "OBSERVED",
+      "track_id": 37,
+      "match_distance_px": 1.0,
+      "before_crossing_frame": 419,
+      "before_crossing_bbox": [
+        198,
+        549,
+        373,
+        709
+      ],
+      "crossing_frame": 421,
+      "crossing_time_s": 40.2,
+      "crossing_bbox": [
+        189,
+        550,
+        370,
+        716
+      ]
+    },
+    "observed_crossing_frame": 421,
+    "observed_crossing_time_s": 40.2,
+    "observed_clearance_s": 13.464,
+    "signed_error_s": -7.304,
+    "absolute_error_s": 7.304,
+    "measurement_status": "OBSERVED",
+    "evidence_before": "outputs\\final_validation\\observed_evidence\\clip_01_before_crossing.jpg",
+    "evidence_crossing": "outputs\\final_validation\\observed_evidence\\clip_01_crossing.jpg"
+  },
+  {
+    "clip_name": "clip_02.mp4",
+    "snapshot_frame": 3640,
+    "snapshot_time_s": 121.333,
+    "fps": 30.0,
+    "vehicle_count": 3,
+    "ordered_vehicle_types": [
+      "Car",
+      "Bus",
+      "Motorcycle"
+    ],
+    "position_groups": [
+      "P1",
+      "P2",
+      "P3-4"
+    ],
+    "predicted_clearance_s": 6.2074,
+    "predicted_green_s": 9.33,
+    "last_queue_position": "P3",
+    "last_vehicle_type": "Motorcycle",
+    "last_vehicle_bbox_at_snapshot": [
+      414,
+      470,
+      56,
+      146
+    ],
+    "last_vehicle_bottom_center_at_snapshot": [
+      442.0,
+      616
+    ],
+    "snapshot_file": "validation_clip_02_snapshot.jpg",
+    "tracking_result": {
+      "status": "OBSERVED",
+      "track_id": 860,
+      "match_distance_px": 0.5,
+      "before_crossing_frame": 3714,
+      "before_crossing_bbox": [
+        298,
+        589,
+        356,
+        712
+      ],
+      "crossing_frame": 3716,
+      "crossing_time_s": 123.867,
+      "crossing_bbox": [
+        288,
+        590,
+        358,
+        740
+      ]
+    },
+    "observed_crossing_frame": 3716,
+    "observed_crossing_time_s": 123.867,
+    "observed_clearance_s": 2.534,
+    "signed_error_s": 3.673,
+    "absolute_error_s": 3.673,
+    "measurement_status": "OBSERVED",
+    "evidence_before": "outputs\\final_validation\\observed_evidence\\clip_02_before_crossing.jpg",
+    "evidence_crossing": "outputs\\final_validation\\observed_evidence\\clip_02_crossing.jpg"
+  },
+  {
+    "clip_name": "clip_11.mp4",
+    "snapshot_frame": 540,
+    "snapshot_time_s": 17.998,
+    "fps": 30.003,
+    "vehicle_count": 3,
+    "ordered_vehicle_types": [
+      "Car",
+      "Car",
+      "Motorcycle"
+    ],
+    "position_groups": [
+      "P1",
+      "P2",
+      "P3-4"
+    ],
+    "predicted_clearance_s": 4.1334,
+    "predicted_green_s": 7.25,
+    "last_queue_position": "P3",
+    "last_vehicle_type": "Motorcycle",
+    "last_vehicle_bbox_at_snapshot": [
+      340,
+      464,
+      33,
+      74
+    ],
+    "last_vehicle_bottom_center_at_snapshot": [
+      356.5,
+      538
+    ],
+    "snapshot_file": "validation_clip_11_snapshot.jpg",
+    "tracking_result": {
+      "status": "OBSERVED",
+      "track_id": 1258,
+      "match_distance_px": 2.24,
+      "before_crossing_frame": 668,
+      "before_crossing_bbox": [
+        172,
+        551,
+        222,
+        675
+      ],
+      "crossing_frame": 669,
+      "crossing_time_s": 22.297,
+      "crossing_bbox": [
+        170,
+        555,
+        219,
+        679
+      ]
+    },
+    "observed_crossing_frame": 669,
+    "observed_crossing_time_s": 22.297,
+    "observed_clearance_s": 4.299,
+    "signed_error_s": -0.166,
+    "absolute_error_s": 0.166,
+    "measurement_status": "OBSERVED",
+    "evidence_before": "outputs\\final_validation\\observed_evidence\\clip_11_before_crossing.jpg",
+    "evidence_crossing": "outputs\\final_validation\\observed_evidence\\clip_11_crossing.jpg"
+  }
+]

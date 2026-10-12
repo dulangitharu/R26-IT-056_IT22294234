@@ -1,0 +1,29 @@
+{
+  "clip_key": "clip_11",
+  "status": "OBSERVED",
+  "sanity_match": true,
+  "clip_name": "clip_11.mp4",
+  "snapshot_frame": 3040,
+  "snapshot_time_s": 101.322,
+  "vehicle_count": 5,
+  "ordered_vehicle_types": [
+    "Car",
+    "Car",
+    "Car",
+    "Car",
+    "Car"
+  ],
+  "predicted_clearance_s": 8.7887,
+  "predicted_green_s": 11.91,
+  "last_queue_position": "P5",
+  "last_vehicle_type": "Car",
+  "track_id": 270,
+  "match_distance_px": 0.0,
+  "observed_crossing_frame": 3308,
+  "observed_crossing_time_s": 110.254,
+  "observed_clearance_s": 8.932,
+  "signed_error_s": -0.143,
+  "absolute_error_s": 0.143,
+  "measurement_status": "OBSERVED",
+  "evidence_image": "outputs\\final_validation\\observed_evidence\\clip_11_crossing.jpg"
+}

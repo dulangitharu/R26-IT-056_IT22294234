@@ -1,0 +1,848 @@
+{
+  "frame_audit": [
+    {
+      "index": 0,
+      "class": "Car",
+      "conf": 0.7073,
+      "bbox_x1y1x2y2": [
+        474,
+        895,
+        566,
+        1024
+      ],
+      "bottom_center": [
+        520.0,
+        1024
+      ],
+      "roi_status": "ROI_OUT",
+      "distance_to_line_b_px": 183.67,
+      "current_assigned_queue_position": "P5"
+    },
+    {
+      "index": 1,
+      "class": "Car",
+      "conf": 0.6685,
+      "bbox_x1y1x2y2": [
+        1,
+        689,
+        54,
+        814
+      ],
+      "bottom_center": [
+        27.5,
+        814
+      ],
+      "roi_status": "ROI_OUT",
+      "distance_to_line_b_px": 193.64,
+      "current_assigned_queue_position": "P6"
+    },
+    {
+      "index": 2,
+      "class": "Car",
+      "conf": 0.6581,
+      "bbox_x1y1x2y2": [
+        107,
+        581,
+        267,
+        708
+      ],
+      "bottom_center": [
+        187.0,
+        708
+      ],
+      "roi_status": "ROI_IN",
+      "distance_to_line_b_px": 31.64,
+      "current_assigned_queue_position": "P2"
+    },
+    {
+      "index": 3,
+      "class": "Car",
+      "conf": 0.6195,
+      "bbox_x1y1x2y2": [
+        219,
+        506,
+        331,
+        618
+      ],
+      "bottom_center": [
+        275.0,
+        618
+      ],
+      "roi_status": "ROI_IN",
+      "distance_to_line_b_px": 86.49,
+      "current_assigned_queue_position": "P3"
+    },
+    {
+      "index": 4,
+      "class": "Motorcycle",
+      "conf": 0.6102,
+      "bbox_x1y1x2y2": [
+        348,
+        535,
+        399,
+        645
+      ],
+      "bottom_center": [
+        373.5,
+        645
+      ],
+      "roi_status": "ROI_IN",
+      "distance_to_line_b_px": 102.17,
+      "current_assigned_queue_position": "P4"
+    },
+    {
+      "index": 5,
+      "class": "Car",
+      "conf": 0.5936,
+      "bbox_x1y1x2y2": [
+        0,
+        503,
+        50,
+        568
+      ],
+      "bottom_center": [
+        25.0,
+        568
+      ],
+      "roi_status": "ROI_OUT",
+      "distance_to_line_b_px": 29.79,
+      "current_assigned_queue_position": "P1"
+    },
+    {
+      "index": 6,
+      "class": "Car",
+      "conf": 0.5152,
+      "bbox_x1y1x2y2": [
+        390,
+        430,
+        489,
+        532
+      ],
+      "bottom_center": [
+        439.5,
+        532
+      ],
+      "roi_status": "ROI_IN",
+      "distance_to_line_b_px": 232.29,
+      "current_assigned_queue_position": "P7"
+    }
+  ],
+  "p1_candidate": {
+    "index": 5,
+    "class": "Car",
+    "conf": 0.5936,
+    "bbox_x1y1x2y2": [
+      0,
+      503,
+      50,
+      568
+    ],
+    "bottom_center": [
+      25.0,
+      568
+    ],
+    "roi_status": "ROI_OUT",
+    "distance_to_line_b_px": 29.79,
+    "current_assigned_queue_position": "P1"
+  },
+  "p5_candidate": {
+    "index": 0,
+    "class": "Car",
+    "conf": 0.7073,
+    "bbox_x1y1x2y2": [
+      474,
+      895,
+      566,
+      1024
+    ],
+    "bottom_center": [
+      520.0,
+      1024
+    ],
+    "roi_status": "ROI_OUT",
+    "distance_to_line_b_px": 183.67,
+    "current_assigned_queue_position": "P5"
+  },
+  "p5_temporal_check": {
+    "suspect_track_id": 1,
+    "match_distance_px_at_target_frame": 0.5,
+    "track_history_in_window": [
+      {
+        "frame": 250,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.8019,
+        "bottom_center": [
+          521.0,
+          1023
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 251,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.7993,
+        "bottom_center": [
+          520.5,
+          1023
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 252,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.8152,
+        "bottom_center": [
+          520.5,
+          1023
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 253,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.8275,
+        "bottom_center": [
+          520.0,
+          1023
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 254,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.8306,
+        "bottom_center": [
+          520.0,
+          1023
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 255,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.8303,
+        "bottom_center": [
+          520.5,
+          1023
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 256,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.8328,
+        "bottom_center": [
+          520.0,
+          1023
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 257,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.8325,
+        "bottom_center": [
+          519.5,
+          1023
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 258,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.8272,
+        "bottom_center": [
+          519.5,
+          1023
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 259,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.8439,
+        "bottom_center": [
+          520.0,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 260,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.8472,
+        "bottom_center": [
+          520.0,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 261,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.8674,
+        "bottom_center": [
+          520.5,
+          1023
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 262,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.875,
+        "bottom_center": [
+          520.5,
+          1023
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 263,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.8699,
+        "bottom_center": [
+          520.0,
+          1023
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 264,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.8808,
+        "bottom_center": [
+          520.0,
+          1023
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 265,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.8759,
+        "bottom_center": [
+          520.0,
+          1023
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 266,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.8641,
+        "bottom_center": [
+          520.0,
+          1023
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 267,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.8563,
+        "bottom_center": [
+          520.0,
+          1023
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 268,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.8738,
+        "bottom_center": [
+          520.0,
+          1023
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 269,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.8596,
+        "bottom_center": [
+          520.0,
+          1023
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 270,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.8098,
+        "bottom_center": [
+          519.5,
+          1023
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 271,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.8076,
+        "bottom_center": [
+          519.5,
+          1023
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 272,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.8138,
+        "bottom_center": [
+          519.5,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 273,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.7849,
+        "bottom_center": [
+          519.5,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 274,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.7669,
+        "bottom_center": [
+          519.5,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 275,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.7785,
+        "bottom_center": [
+          519.5,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 276,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.7719,
+        "bottom_center": [
+          520.0,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 277,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.7633,
+        "bottom_center": [
+          520.0,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 278,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.7232,
+        "bottom_center": [
+          520.0,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 279,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.717,
+        "bottom_center": [
+          520.0,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 280,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.7073,
+        "bottom_center": [
+          520.5,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 281,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.7062,
+        "bottom_center": [
+          520.5,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 282,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.6573,
+        "bottom_center": [
+          520.5,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 283,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.7132,
+        "bottom_center": [
+          520.5,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 284,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.6831,
+        "bottom_center": [
+          520.5,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 285,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.6589,
+        "bottom_center": [
+          520.5,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 286,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.6643,
+        "bottom_center": [
+          520.5,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 287,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.6004,
+        "bottom_center": [
+          521.0,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 288,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.6407,
+        "bottom_center": [
+          521.0,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 289,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.662,
+        "bottom_center": [
+          521.0,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 290,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.5851,
+        "bottom_center": [
+          521.0,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 291,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.6076,
+        "bottom_center": [
+          521.0,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 292,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.5889,
+        "bottom_center": [
+          521.0,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 293,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.5848,
+        "bottom_center": [
+          521.5,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 294,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.5084,
+        "bottom_center": [
+          521.5,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 295,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.5489,
+        "bottom_center": [
+          522.0,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 296,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.5542,
+        "bottom_center": [
+          522.0,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 297,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.5379,
+        "bottom_center": [
+          522.5,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 298,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.5387,
+        "bottom_center": [
+          522.5,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 299,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.5924,
+        "bottom_center": [
+          522.5,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 300,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.6729,
+        "bottom_center": [
+          523.0,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 301,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.6617,
+        "bottom_center": [
+          523.0,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 302,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.6495,
+        "bottom_center": [
+          523.0,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 303,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.6692,
+        "bottom_center": [
+          523.0,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 304,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.6544,
+        "bottom_center": [
+          523.0,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 305,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.6524,
+        "bottom_center": [
+          523.0,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 306,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.6536,
+        "bottom_center": [
+          522.5,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 307,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.6372,
+        "bottom_center": [
+          522.0,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 308,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.6194,
+        "bottom_center": [
+          522.0,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 309,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.6245,
+        "bottom_center": [
+          522.0,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      },
+      {
+        "frame": 310,
+        "track_id": 1,
+        "class": "Car",
+        "conf": 0.612,
+        "bottom_center": [
+          522.0,
+          1024
+        ],
+        "roi_status": "ROI_OUT"
+      }
+    ],
+    "window": [
+      250,
+      310
+    ]
+  },
+  "overlay_image": "clip01_queue_candidate_audit.jpg"
+}

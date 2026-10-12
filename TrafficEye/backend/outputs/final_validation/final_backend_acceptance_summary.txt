@@ -1,0 +1,49 @@
+TrafficEye — Final Backend Acceptance Audit Summary
+(formal research acceptance test, real FastAPI /api/analysis endpoint)
+
+RESULT: BACKEND ACCEPTANCE PASS — SAFE TO CODE FREEZE
+
+Tested clips: clip_02.mp4, clip_11.mp4, clip_01.mp4 (deterministic third clip:
+first clean compatible clip in numeric order excluding clip_02/clip_09/clip_11)
+
+--------------------------------------------------------------------
+PHASE-BY-PHASE RESULTS
+--------------------------------------------------------------------
+Phase 0  Protected-file baseline recorded                         DONE
+Phase 1  Real end-to-end video upload via actual API endpoint      PASS (3/3 clips, HTTP 200)
+Phase 2  Visual output sanity                                      PASS (see note below — stale artifacts found and corrected)
+Phase 3  Independent recomputation (lookup CSV read directly,
+         not via traffic_calculations.py)                          PASS (4/4 cases exact match)
+Phase 4  Response consistency invariants                           PASS (17/17 checks x 4 responses, all true)
+Phase 5  Repeatability / state-leak test (clip_02→clip_11→clip_02) PASS (all fields identical, no contamination)
+Phase 6  Known reference comparison                                PASS (clip_02, clip_11 match prior verified values)
+Phase 7  Calculation-only stress regression (17 scenarios)          PASS (no crash/NaN/negative, FIFO consistent,
+                                                                          green=clearance+3.12, monotonic append)
+Phase 8  Frontend contract check                                   PASS (all fields the UI reads are present)
+Phase 9  Evidence saved                                            DONE (this file + final_backend_acceptance_audit.json)
+Phase 10 Final protected-file integrity check                      PASS (byte-identical to Phase 0 baseline)
+
+--------------------------------------------------------------------
+NOTABLE FINDING (Phase 2) — reported, not silently fixed
+--------------------------------------------------------------------
+outputs/final_validation/validation_clip_02_snapshot.jpg and
+validation_clip_11_snapshot.jpg on disk are STALE artifacts left over from an
+earlier, already-diagnosed cross-clip model-state-leak bug in a research
+helper script (NOT the production API — see Phase 5, which proves the real
+API path has no such contamination). They show the wrong frame/queue
+(clip_02: frame 3640 instead of 4090; clip_11: frame 540 instead of 3040).
+
+Corrected, isolated-process-verified snapshots were generated for this audit
+only, without modifying any backend code:
+  outputs/final_validation/audit_current_clip_02_snapshot.jpg (frame=4090, matches API)
+  outputs/final_validation/audit_current_clip_11_snapshot.jpg (frame=3040, matches API)
+
+Recommendation: the two stale validation_clip_0X_snapshot.jpg files should be
+regenerated or removed as a housekeeping step — this does not block code
+freeze since it is a leftover diagnostic artifact, not a backend defect, and
+the live API was independently proven correct via Phase 1/3/5.
+
+--------------------------------------------------------------------
+FINAL DECISION
+--------------------------------------------------------------------
+BACKEND ACCEPTANCE PASS — SAFE TO CODE FREEZE

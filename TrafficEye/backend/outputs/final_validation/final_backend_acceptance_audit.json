@@ -1,0 +1,774 @@
+{
+  "audit_type": "TrafficEye final backend acceptance audit (formal research acceptance test)",
+  "phase0_protected_file_baseline": "recorded before testing; see phase10 for comparison",
+  "phase1_real_endpoint_tests": {
+    "clip_02_A": {
+      "http_status": 200,
+      "vehicle_count": 4,
+      "vehicle_breakdown": {
+        "Motorcycle": 3,
+        "Car": 1
+      },
+      "ordered_queue": [
+        {
+          "vehicle_type": "Car",
+          "queue_position": 1,
+          "position_group": "P1",
+          "vehicle_length_m": 4.3,
+          "cumulative_distance_m": 4.3,
+          "recommended_speed_mps": 2.154,
+          "speed_source": "median_effective_speed_mps",
+          "raw_clear_time_s": 1.9963,
+          "fifo_adjusted_clear_time_s": 1.9963
+        },
+        {
+          "vehicle_type": "Motorcycle",
+          "queue_position": 2,
+          "position_group": "P2",
+          "vehicle_length_m": 2.0,
+          "cumulative_distance_m": 7.477,
+          "recommended_speed_mps": 2.389,
+          "speed_source": "median_effective_speed_mps",
+          "raw_clear_time_s": 3.1298,
+          "fifo_adjusted_clear_time_s": 3.1298
+        },
+        {
+          "vehicle_type": "Motorcycle",
+          "queue_position": 3,
+          "position_group": "P3-4",
+          "vehicle_length_m": 2.0,
+          "cumulative_distance_m": 10.654,
+          "recommended_speed_mps": 3.134,
+          "speed_source": "median_effective_speed_mps",
+          "raw_clear_time_s": 3.3995,
+          "fifo_adjusted_clear_time_s": 3.3995
+        },
+        {
+          "vehicle_type": "Motorcycle",
+          "queue_position": 4,
+          "position_group": "P3-4",
+          "vehicle_length_m": 2.0,
+          "cumulative_distance_m": 13.831,
+          "recommended_speed_mps": 3.134,
+          "speed_source": "median_effective_speed_mps",
+          "raw_clear_time_s": 4.4132,
+          "fifo_adjusted_clear_time_s": 4.4132
+        }
+      ],
+      "queue_calculation_method": "queue_position_based",
+      "clearance_time_s": 4.4132,
+      "suggested_green_s": 7.53,
+      "traffic_level": "LOW",
+      "average_gap_m": 1.177,
+      "safety_buffer_s": 3.12,
+      "emergency_detected": false,
+      "emergency_fields": "NOT_RETURNED (emergency_detected=false, no Ambulance in this clip)"
+    },
+    "clip_11": {
+      "http_status": 200,
+      "vehicle_count": 5,
+      "vehicle_breakdown": {
+        "Car": 5
+      },
+      "ordered_queue": [
+        {
+          "vehicle_type": "Car",
+          "queue_position": 1,
+          "position_group": "P1",
+          "vehicle_length_m": 4.3,
+          "cumulative_distance_m": 4.3,
+          "recommended_speed_mps": 2.154,
+          "speed_source": "median_effective_speed_mps",
+          "raw_clear_time_s": 1.9963,
+          "fifo_adjusted_clear_time_s": 1.9963
+        },
+        {
+          "vehicle_type": "Car",
+          "queue_position": 2,
+          "position_group": "P2",
+          "vehicle_length_m": 4.3,
+          "cumulative_distance_m": 9.777,
+          "recommended_speed_mps": 2.611,
+          "speed_source": "median_effective_speed_mps",
+          "raw_clear_time_s": 3.7445,
+          "fifo_adjusted_clear_time_s": 3.7445
+        },
+        {
+          "vehicle_type": "Car",
+          "queue_position": 3,
+          "position_group": "P3-4",
+          "vehicle_length_m": 4.3,
+          "cumulative_distance_m": 15.254,
+          "recommended_speed_mps": 2.992,
+          "speed_source": "median_effective_speed_mps",
+          "raw_clear_time_s": 5.0983,
+          "fifo_adjusted_clear_time_s": 5.0983
+        },
+        {
+          "vehicle_type": "Car",
+          "queue_position": 4,
+          "position_group": "P3-4",
+          "vehicle_length_m": 4.3,
+          "cumulative_distance_m": 20.731,
+          "recommended_speed_mps": 2.992,
+          "speed_source": "median_effective_speed_mps",
+          "raw_clear_time_s": 6.9288,
+          "fifo_adjusted_clear_time_s": 6.9288
+        },
+        {
+          "vehicle_type": "Car",
+          "queue_position": 5,
+          "position_group": "P5+",
+          "vehicle_length_m": 4.3,
+          "cumulative_distance_m": 26.208,
+          "recommended_speed_mps": 2.982,
+          "speed_source": "median_effective_speed_mps",
+          "raw_clear_time_s": 8.7887,
+          "fifo_adjusted_clear_time_s": 8.7887
+        }
+      ],
+      "queue_calculation_method": "queue_position_based",
+      "clearance_time_s": 8.7887,
+      "suggested_green_s": 11.91,
+      "traffic_level": "MEDIUM",
+      "average_gap_m": 1.177,
+      "safety_buffer_s": 3.12,
+      "emergency_detected": false,
+      "emergency_fields": "NOT_RETURNED (emergency_detected=false, no Ambulance in this clip)"
+    },
+    "clip_02_B": {
+      "http_status": 200,
+      "vehicle_count": 4,
+      "vehicle_breakdown": {
+        "Motorcycle": 3,
+        "Car": 1
+      },
+      "ordered_queue": [
+        {
+          "vehicle_type": "Car",
+          "queue_position": 1,
+          "position_group": "P1",
+          "vehicle_length_m": 4.3,
+          "cumulative_distance_m": 4.3,
+          "recommended_speed_mps": 2.154,
+          "speed_source": "median_effective_speed_mps",
+          "raw_clear_time_s": 1.9963,
+          "fifo_adjusted_clear_time_s": 1.9963
+        },
+        {
+          "vehicle_type": "Motorcycle",
+          "queue_position": 2,
+          "position_group": "P2",
+          "vehicle_length_m": 2.0,
+          "cumulative_distance_m": 7.477,
+          "recommended_speed_mps": 2.389,
+          "speed_source": "median_effective_speed_mps",
+          "raw_clear_time_s": 3.1298,
+          "fifo_adjusted_clear_time_s": 3.1298
+        },
+        {
+          "vehicle_type": "Motorcycle",
+          "queue_position": 3,
+          "position_group": "P3-4",
+          "vehicle_length_m": 2.0,
+          "cumulative_distance_m": 10.654,
+          "recommended_speed_mps": 3.134,
+          "speed_source": "median_effective_speed_mps",
+          "raw_clear_time_s": 3.3995,
+          "fifo_adjusted_clear_time_s": 3.3995
+        },
+        {
+          "vehicle_type": "Motorcycle",
+          "queue_position": 4,
+          "position_group": "P3-4",
+          "vehicle_length_m": 2.0,
+          "cumulative_distance_m": 13.831,
+          "recommended_speed_mps": 3.134,
+          "speed_source": "median_effective_speed_mps",
+          "raw_clear_time_s": 4.4132,
+          "fifo_adjusted_clear_time_s": 4.4132
+        }
+      ],
+      "queue_calculation_method": "queue_position_based",
+      "clearance_time_s": 4.4132,
+      "suggested_green_s": 7.53,
+      "traffic_level": "LOW",
+      "average_gap_m": 1.177,
+      "safety_buffer_s": 3.12,
+      "emergency_detected": false,
+      "emergency_fields": "NOT_RETURNED (emergency_detected=false, no Ambulance in this clip)"
+    },
+    "clip_01": {
+      "http_status": 200,
+      "vehicle_count": 4,
+      "vehicle_breakdown": {
+        "Car": 3,
+        "Motorcycle": 1
+      },
+      "ordered_queue": [
+        {
+          "vehicle_type": "Car",
+          "queue_position": 1,
+          "position_group": "P1",
+          "vehicle_length_m": 4.3,
+          "cumulative_distance_m": 4.3,
+          "recommended_speed_mps": 2.154,
+          "speed_source": "median_effective_speed_mps",
+          "raw_clear_time_s": 1.9963,
+          "fifo_adjusted_clear_time_s": 1.9963
+        },
+        {
+          "vehicle_type": "Car",
+          "queue_position": 2,
+          "position_group": "P2",
+          "vehicle_length_m": 4.3,
+          "cumulative_distance_m": 9.777,
+          "recommended_speed_mps": 2.611,
+          "speed_source": "median_effective_speed_mps",
+          "raw_clear_time_s": 3.7445,
+          "fifo_adjusted_clear_time_s": 3.7445
+        },
+        {
+          "vehicle_type": "Motorcycle",
+          "queue_position": 3,
+          "position_group": "P3-4",
+          "vehicle_length_m": 2.0,
+          "cumulative_distance_m": 12.954,
+          "recommended_speed_mps": 3.134,
+          "speed_source": "median_effective_speed_mps",
+          "raw_clear_time_s": 4.1334,
+          "fifo_adjusted_clear_time_s": 4.1334
+        },
+        {
+          "vehicle_type": "Car",
+          "queue_position": 4,
+          "position_group": "P3-4",
+          "vehicle_length_m": 4.3,
+          "cumulative_distance_m": 18.431,
+          "recommended_speed_mps": 2.992,
+          "speed_source": "median_effective_speed_mps",
+          "raw_clear_time_s": 6.1601,
+          "fifo_adjusted_clear_time_s": 6.1601
+        }
+      ],
+      "queue_calculation_method": "queue_position_based",
+      "clearance_time_s": 6.1601,
+      "suggested_green_s": 9.28,
+      "traffic_level": "LOW",
+      "average_gap_m": 1.177,
+      "safety_buffer_s": 3.12,
+      "emergency_detected": false,
+      "emergency_fields": "NOT_RETURNED (emergency_detected=false, no Ambulance in this clip)"
+    }
+  },
+  "phase2_visual_sanity": {
+    "clip_01": {
+      "snapshot_image": "outputs/final_validation/validation_clip_01_snapshot.jpg",
+      "status": "VALID - matches current API (frame=280, 4-vehicle queue), verified clean, no duplicates, ROI_OUT correctly rejected"
+    },
+    "clip_02": {
+      "stale_artifact_found": "outputs/final_validation/validation_clip_02_snapshot.jpg shows frame=3640 (Car,Bus,Motorcycle) - this is a LEFTOVER artifact from an earlier known-contaminated diagnostic run (cross-clip model-state leak), NOT the current correct API behavior (frame=4090).",
+      "corrected_snapshot_image": "outputs/final_validation/audit_current_clip_02_snapshot.jpg",
+      "status": "VALID once regenerated in an isolated process - frame=4090, 4-vehicle queue (Car,Motorcycle,Motorcycle,Motorcycle) matches current API exactly, verified clean, no duplicates, 2 ROI_OUT correctly rejected"
+    },
+    "clip_11": {
+      "stale_artifact_found": "outputs/final_validation/validation_clip_11_snapshot.jpg shows frame=540 (Car,Car,Motorcycle) - same known-contaminated-run artifact, NOT current correct API behavior (frame=3040).",
+      "corrected_snapshot_image": "outputs/final_validation/audit_current_clip_11_snapshot.jpg",
+      "status": "VALID once regenerated in an isolated process - frame=3040, 5-vehicle queue (Car x5) matches current API exactly, verified clean, no duplicates, 2 ROI_OUT correctly rejected"
+    }
+  },
+  "phase3_independent_recomputation": "see phase3_results below - loaded final_green_time_lookup_table.csv directly (not via traffic_calculations.py) and recomputed cumulative distance / raw / FIFO / clearance / green from scratch for every tested queue",
+  "phase4_response_consistency": "see phase4_results below - all invariants checked per response",
+  "phase5_repeatability": {
+    "sequence": "clip_02 -> clip_11 -> clip_02 (again)",
+    "fields_compared": [
+      "vehicle_count",
+      "vehicle_breakdown",
+      "traffic_level",
+      "queue_length_m",
+      "clearance_time_s",
+      "suggested_green_s",
+      "queue_calculation_method",
+      "ordered_queue",
+      "average_gap_m",
+      "safety_buffer_s",
+      "emergency_detected"
+    ],
+    "all_fields_identical": true,
+    "verdict": "NO cross-request state contamination on the real API path"
+  },
+  "phase6_known_reference_comparison": {
+    "clip_02": {
+      "reference_clearance": 4.4132,
+      "reference_green": 7.53,
+      "api_clearance": 4.4132,
+      "api_green": 7.53,
+      "match": true
+    },
+    "clip_11": {
+      "reference_clearance": 8.7887,
+      "reference_green": 11.91,
+      "api_clearance": 8.7887,
+      "api_green": 11.91,
+      "match": true
+    }
+  },
+  "phase7_calculation_stress_regression": "17/17 scenarios PASS (Car/Motorcycle/Bus/Truck x1/5/10/15, one mixed-10 queue) - no crash, no NaN/Infinity/negative, FIFO consistent, green=clearance+3.12 in every case, clearance monotonically non-decreasing as more of the same type is appended",
+  "phase8_frontend_contract": {
+    "frontend_fields_used": [
+      "clearance_time_s",
+      "direction",
+      "emergency_clearance_time_s",
+      "emergency_detected",
+      "emergency_position_group",
+      "emergency_priority",
+      "emergency_priority_green_s",
+      "emergency_queue_position",
+      "emergency_recommendation",
+      "emergency_vehicle_type",
+      "location_name",
+      "queue_length_m",
+      "road",
+      "suggested_green_s",
+      "traffic_level",
+      "vehicle_breakdown",
+      "vehicle_count"
+    ],
+    "all_present_in_api_response": true,
+    "note": "frontend does not read ordered_queue/average_gap_m/safety_buffer_s/queue_calculation_method - present in response but unused by current UI; known pre-existing limitation: these response-only fields are not persisted to MongoDB so they are unavailable again after a page reload (Overview/History view) - not a new defect found by this audit",
+    "emergency_fields_note": "not exercised by a live video in this audit (no Ambulance in tested clips); correctness of emergency_* fields was independently verified via direct build_queue_result() regression earlier in this project"
+  },
+  "phase3_results": {
+    "clip_02_A": {
+      "status": "PASS",
+      "independent_clearance": 4.4132,
+      "api_clearance": 4.4132,
+      "clearance_match": true,
+      "independent_green": 7.53,
+      "api_green": 7.53,
+      "green_match": true,
+      "rows": [
+        {
+          "pos": 1,
+          "type": "Car",
+          "group": "P1",
+          "dist": 4.3,
+          "speed": 2.154,
+          "raw": 1.9963,
+          "fifo": 1.9963
+        },
+        {
+          "pos": 2,
+          "type": "Motorcycle",
+          "group": "P2",
+          "dist": 7.477,
+          "speed": 2.389,
+          "raw": 3.1298,
+          "fifo": 3.1298
+        },
+        {
+          "pos": 3,
+          "type": "Motorcycle",
+          "group": "P3-4",
+          "dist": 10.654,
+          "speed": 3.134,
+          "raw": 3.3995,
+          "fifo": 3.3995
+        },
+        {
+          "pos": 4,
+          "type": "Motorcycle",
+          "group": "P3-4",
+          "dist": 13.831,
+          "speed": 3.134,
+          "raw": 4.4132,
+          "fifo": 4.4132
+        }
+      ]
+    },
+    "clip_11": {
+      "status": "PASS",
+      "independent_clearance": 8.7887,
+      "api_clearance": 8.7887,
+      "clearance_match": true,
+      "independent_green": 11.91,
+      "api_green": 11.91,
+      "green_match": true,
+      "rows": [
+        {
+          "pos": 1,
+          "type": "Car",
+          "group": "P1",
+          "dist": 4.3,
+          "speed": 2.154,
+          "raw": 1.9963,
+          "fifo": 1.9963
+        },
+        {
+          "pos": 2,
+          "type": "Car",
+          "group": "P2",
+          "dist": 9.777,
+          "speed": 2.611,
+          "raw": 3.7445,
+          "fifo": 3.7445
+        },
+        {
+          "pos": 3,
+          "type": "Car",
+          "group": "P3-4",
+          "dist": 15.254,
+          "speed": 2.992,
+          "raw": 5.0983,
+          "fifo": 5.0983
+        },
+        {
+          "pos": 4,
+          "type": "Car",
+          "group": "P3-4",
+          "dist": 20.731,
+          "speed": 2.992,
+          "raw": 6.9288,
+          "fifo": 6.9288
+        },
+        {
+          "pos": 5,
+          "type": "Car",
+          "group": "P5+",
+          "dist": 26.208,
+          "speed": 2.982,
+          "raw": 8.7887,
+          "fifo": 8.7887
+        }
+      ]
+    },
+    "clip_02_B": {
+      "status": "PASS",
+      "independent_clearance": 4.4132,
+      "api_clearance": 4.4132,
+      "clearance_match": true,
+      "independent_green": 7.53,
+      "api_green": 7.53,
+      "green_match": true,
+      "rows": [
+        {
+          "pos": 1,
+          "type": "Car",
+          "group": "P1",
+          "dist": 4.3,
+          "speed": 2.154,
+          "raw": 1.9963,
+          "fifo": 1.9963
+        },
+        {
+          "pos": 2,
+          "type": "Motorcycle",
+          "group": "P2",
+          "dist": 7.477,
+          "speed": 2.389,
+          "raw": 3.1298,
+          "fifo": 3.1298
+        },
+        {
+          "pos": 3,
+          "type": "Motorcycle",
+          "group": "P3-4",
+          "dist": 10.654,
+          "speed": 3.134,
+          "raw": 3.3995,
+          "fifo": 3.3995
+        },
+        {
+          "pos": 4,
+          "type": "Motorcycle",
+          "group": "P3-4",
+          "dist": 13.831,
+          "speed": 3.134,
+          "raw": 4.4132,
+          "fifo": 4.4132
+        }
+      ]
+    },
+    "clip_01": {
+      "status": "PASS",
+      "independent_clearance": 6.1601,
+      "api_clearance": 6.1601,
+      "clearance_match": true,
+      "independent_green": 9.28,
+      "api_green": 9.28,
+      "green_match": true,
+      "rows": [
+        {
+          "pos": 1,
+          "type": "Car",
+          "group": "P1",
+          "dist": 4.3,
+          "speed": 2.154,
+          "raw": 1.9963,
+          "fifo": 1.9963
+        },
+        {
+          "pos": 2,
+          "type": "Car",
+          "group": "P2",
+          "dist": 9.777,
+          "speed": 2.611,
+          "raw": 3.7445,
+          "fifo": 3.7445
+        },
+        {
+          "pos": 3,
+          "type": "Motorcycle",
+          "group": "P3-4",
+          "dist": 12.954,
+          "speed": 3.134,
+          "raw": 4.1334,
+          "fifo": 4.1334
+        },
+        {
+          "pos": 4,
+          "type": "Car",
+          "group": "P3-4",
+          "dist": 18.431,
+          "speed": 2.992,
+          "raw": 6.1601,
+          "fifo": 6.1601
+        }
+      ]
+    }
+  },
+  "phase4_results": {
+    "clip_02_A": {
+      "all_pass": true,
+      "checks": {
+        "vehicle_count_eq_len_ordered_queue": true,
+        "breakdown_sum_eq_vehicle_count": true,
+        "all_lengths_positive": true,
+        "all_speeds_positive": true,
+        "all_distances_nonneg": true,
+        "all_raw_times_nonneg": true,
+        "all_fifo_times_nonneg": true,
+        "fifo_never_decreases": true,
+        "distances_strictly_increasing": true,
+        "clearance_finite_positive": true,
+        "green_finite_positive": true,
+        "green_eq_clearance_plus_3.12": true,
+        "queue_clearance_eq_max_fifo": true,
+        "average_gap_is_1.177": true,
+        "safety_buffer_is_3.12": true,
+        "method_is_queue_position_based": true,
+        "no_nan_or_infinity": true,
+        "bad_values_found": []
+      }
+    },
+    "clip_11": {
+      "all_pass": true,
+      "checks": {
+        "vehicle_count_eq_len_ordered_queue": true,
+        "breakdown_sum_eq_vehicle_count": true,
+        "all_lengths_positive": true,
+        "all_speeds_positive": true,
+        "all_distances_nonneg": true,
+        "all_raw_times_nonneg": true,
+        "all_fifo_times_nonneg": true,
+        "fifo_never_decreases": true,
+        "distances_strictly_increasing": true,
+        "clearance_finite_positive": true,
+        "green_finite_positive": true,
+        "green_eq_clearance_plus_3.12": true,
+        "queue_clearance_eq_max_fifo": true,
+        "average_gap_is_1.177": true,
+        "safety_buffer_is_3.12": true,
+        "method_is_queue_position_based": true,
+        "no_nan_or_infinity": true,
+        "bad_values_found": []
+      }
+    },
+    "clip_02_B": {
+      "all_pass": true,
+      "checks": {
+        "vehicle_count_eq_len_ordered_queue": true,
+        "breakdown_sum_eq_vehicle_count": true,
+        "all_lengths_positive": true,
+        "all_speeds_positive": true,
+        "all_distances_nonneg": true,
+        "all_raw_times_nonneg": true,
+        "all_fifo_times_nonneg": true,
+        "fifo_never_decreases": true,
+        "distances_strictly_increasing": true,
+        "clearance_finite_positive": true,
+        "green_finite_positive": true,
+        "green_eq_clearance_plus_3.12": true,
+        "queue_clearance_eq_max_fifo": true,
+        "average_gap_is_1.177": true,
+        "safety_buffer_is_3.12": true,
+        "method_is_queue_position_based": true,
+        "no_nan_or_infinity": true,
+        "bad_values_found": []
+      }
+    },
+    "clip_01": {
+      "all_pass": true,
+      "checks": {
+        "vehicle_count_eq_len_ordered_queue": true,
+        "breakdown_sum_eq_vehicle_count": true,
+        "all_lengths_positive": true,
+        "all_speeds_positive": true,
+        "all_distances_nonneg": true,
+        "all_raw_times_nonneg": true,
+        "all_fifo_times_nonneg": true,
+        "fifo_never_decreases": true,
+        "distances_strictly_increasing": true,
+        "clearance_finite_positive": true,
+        "green_finite_positive": true,
+        "green_eq_clearance_plus_3.12": true,
+        "queue_clearance_eq_max_fifo": true,
+        "average_gap_is_1.177": true,
+        "safety_buffer_is_3.12": true,
+        "method_is_queue_position_based": true,
+        "no_nan_or_infinity": true,
+        "bad_values_found": []
+      }
+    }
+  },
+  "phase7_results": {
+    "Carx1": {
+      "status": "PASS",
+      "clearance": 1.9963,
+      "green": 5.12,
+      "bad_values": [],
+      "fifo_ok": true,
+      "green_formula_ok": true
+    },
+    "Carx5": {
+      "status": "PASS",
+      "clearance": 8.7887,
+      "green": 11.91,
+      "bad_values": [],
+      "fifo_ok": true,
+      "green_formula_ok": true
+    },
+    "Carx10": {
+      "status": "PASS",
+      "clearance": 17.9722,
+      "green": 21.09,
+      "bad_values": [],
+      "fifo_ok": true,
+      "green_formula_ok": true
+    },
+    "Carx15": {
+      "status": "PASS",
+      "clearance": 27.1556,
+      "green": 30.28,
+      "bad_values": [],
+      "fifo_ok": true,
+      "green_formula_ok": true
+    },
+    "Motorcyclex1": {
+      "status": "PASS",
+      "clearance": 1.7167,
+      "green": 4.84,
+      "bad_values": [],
+      "fifo_ok": true,
+      "green_formula_ok": true
+    },
+    "Motorcyclex5": {
+      "status": "PASS",
+      "clearance": 4.2595,
+      "green": 7.38,
+      "bad_values": [],
+      "fifo_ok": true,
+      "green_formula_ok": true
+    },
+    "Motorcyclex10": {
+      "status": "PASS",
+      "clearance": 8.8598,
+      "green": 11.98,
+      "bad_values": [],
+      "fifo_ok": true,
+      "green_formula_ok": true
+    },
+    "Motorcyclex15": {
+      "status": "PASS",
+      "clearance": 13.4602,
+      "green": 16.58,
+      "bad_values": [],
+      "fifo_ok": true,
+      "green_formula_ok": true
+    },
+    "Busx1": {
+      "status": "PASS",
+      "clearance": 2.9017,
+      "green": 6.02,
+      "bad_values": [],
+      "fifo_ok": true,
+      "green_formula_ok": true
+    },
+    "Busx5": {
+      "status": "PASS",
+      "clearance": 27.3315,
+      "green": 30.45,
+      "bad_values": [],
+      "fifo_ok": true,
+      "green_formula_ok": true
+    },
+    "Busx10": {
+      "status": "PASS",
+      "clearance": 55.2109,
+      "green": 58.33,
+      "bad_values": [],
+      "fifo_ok": true,
+      "green_formula_ok": true
+    },
+    "Busx15": {
+      "status": "PASS",
+      "clearance": 83.0903,
+      "green": 86.21,
+      "bad_values": [],
+      "fifo_ok": true,
+      "green_formula_ok": true
+    },
+    "Truckx1": {
+      "status": "PASS",
+      "clearance": 1.7329,
+      "green": 4.85,
+      "bad_values": [],
+      "fifo_ok": true,
+      "green_formula_ok": true
+    },
+    "Truckx5": {
+      "status": "PASS",
+      "clearance": 23.0395,
+      "green": 26.16,
+      "bad_values": [],
+      "fifo_ok": true,
+      "green_formula_ok": true
+    },
+    "Truckx10": {
+      "status": "PASS",
+      "clearance": 46.6535,
+      "green": 49.77,
+      "bad_values": [],
+      "fifo_ok": true,
+      "green_formula_ok": true
+    },
+    "Truckx15": {
+      "status": "PASS",
+      "clearance": 70.2674,
+      "green": 73.39,
+      "bad_values": [],
+      "fifo_ok": true,
+      "green_formula_ok": true
+    },
+    "mixed_10": {
+      "status": "PASS",
+      "clearance": 29.1327,
+      "green": 32.25,
+      "bad_values": [],
+      "fifo_ok": true,
+      "green_formula_ok": true
+    }
+  },
+  "phase10_final_integrity_check": "PASS - all protected/core files byte-identical to Phase 0 baseline",
+  "final_decision": "BACKEND ACCEPTANCE PASS - SAFE TO CODE FREEZE"
+}

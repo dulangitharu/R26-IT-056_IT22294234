@@ -1,0 +1,1229 @@
+[
+  {
+    "video": "clip_01.mp4",
+    "status": "OK",
+    "selected_profile": "profile_a_original",
+    "profile_scores": {
+      "profile_a_original": "good=272 inliers=218",
+      "profile_b_ambulance_framing": "good=193 inliers=150"
+    },
+    "source_fps": 10.47261777182907,
+    "ambulance_candidate_count": 7,
+    "ambulance_candidates": [
+      {
+        "frame_idx": 160,
+        "time_s": 15.278,
+        "ambulance_conf": 0.41,
+        "ambulance_bbox": [
+          383,
+          403,
+          106,
+          101
+        ],
+        "roi_vehicle_count_this_frame": 2,
+        "all_labels_this_frame": [
+          "Truck",
+          "Ambulance"
+        ],
+        "overlaps_with_others": [
+          {
+            "other_label": "Truck",
+            "other_conf": 0.51,
+            "other_bbox": [
+              247,
+              577,
+              137,
+              140
+            ],
+            "iou": 0.0,
+            "pct_ambulance_covered": 0.0,
+            "pct_other_covered": 0.0
+          }
+        ],
+        "best_overlap": {
+          "other_label": "Truck",
+          "other_conf": 0.51,
+          "other_bbox": [
+            247,
+            577,
+            137,
+            140
+          ],
+          "iou": 0.0,
+          "pct_ambulance_covered": 0.0,
+          "pct_other_covered": 0.0
+        }
+      },
+      {
+        "frame_idx": 1700,
+        "time_s": 162.328,
+        "ambulance_conf": 0.73,
+        "ambulance_bbox": [
+          356,
+          381,
+          121,
+          119
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      },
+      {
+        "frame_idx": 1710,
+        "time_s": 163.283,
+        "ambulance_conf": 0.74,
+        "ambulance_bbox": [
+          354,
+          386,
+          124,
+          117
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      },
+      {
+        "frame_idx": 1720,
+        "time_s": 164.238,
+        "ambulance_conf": 0.72,
+        "ambulance_bbox": [
+          353,
+          393,
+          129,
+          114
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      },
+      {
+        "frame_idx": 1730,
+        "time_s": 165.193,
+        "ambulance_conf": 0.54,
+        "ambulance_bbox": [
+          351,
+          393,
+          137,
+          121
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      },
+      {
+        "frame_idx": 1740,
+        "time_s": 166.148,
+        "ambulance_conf": 0.41,
+        "ambulance_bbox": [
+          350,
+          393,
+          136,
+          125
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      },
+      {
+        "frame_idx": 1750,
+        "time_s": 167.102,
+        "ambulance_conf": 0.5,
+        "ambulance_bbox": [
+          350,
+          396,
+          136,
+          125
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      }
+    ]
+  },
+  {
+    "video": "clip_02.mp4",
+    "status": "OK",
+    "selected_profile": "profile_a_original",
+    "profile_scores": {
+      "profile_a_original": "good=220 inliers=186",
+      "profile_b_ambulance_framing": "good=113 inliers=84"
+    },
+    "source_fps": 30.0,
+    "ambulance_candidate_count": 4,
+    "ambulance_candidates": [
+      {
+        "frame_idx": 1520,
+        "time_s": 50.667,
+        "ambulance_conf": 0.53,
+        "ambulance_bbox": [
+          178,
+          565,
+          78,
+          137
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      },
+      {
+        "frame_idx": 1530,
+        "time_s": 51.0,
+        "ambulance_conf": 0.59,
+        "ambulance_bbox": [
+          166,
+          569,
+          86,
+          139
+        ],
+        "roi_vehicle_count_this_frame": 3,
+        "all_labels_this_frame": [
+          "Motorcycle",
+          "Motorcycle",
+          "Ambulance"
+        ],
+        "overlaps_with_others": [
+          {
+            "other_label": "Motorcycle",
+            "other_conf": 0.61,
+            "other_bbox": [
+              394,
+              591,
+              44,
+              105
+            ],
+            "iou": 0.0,
+            "pct_ambulance_covered": 0.0,
+            "pct_other_covered": 0.0
+          },
+          {
+            "other_label": "Motorcycle",
+            "other_conf": 0.6,
+            "other_bbox": [
+              396,
+              623,
+              40,
+              75
+            ],
+            "iou": 0.0,
+            "pct_ambulance_covered": 0.0,
+            "pct_other_covered": 0.0
+          }
+        ],
+        "best_overlap": {
+          "other_label": "Motorcycle",
+          "other_conf": 0.61,
+          "other_bbox": [
+            394,
+            591,
+            44,
+            105
+          ],
+          "iou": 0.0,
+          "pct_ambulance_covered": 0.0,
+          "pct_other_covered": 0.0
+        }
+      },
+      {
+        "frame_idx": 4650,
+        "time_s": 155.0,
+        "ambulance_conf": 0.47,
+        "ambulance_bbox": [
+          256,
+          458,
+          193,
+          213
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      },
+      {
+        "frame_idx": 4750,
+        "time_s": 158.333,
+        "ambulance_conf": 0.47,
+        "ambulance_bbox": [
+          262,
+          378,
+          209,
+          168
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      }
+    ]
+  },
+  {
+    "video": "clip_03.mp4",
+    "status": "OK",
+    "selected_profile": "profile_a_original",
+    "profile_scores": {
+      "profile_a_original": "good=185 inliers=122",
+      "profile_b_ambulance_framing": "good=109 inliers=65"
+    },
+    "source_fps": 29.974554707379134,
+    "ambulance_candidate_count": 6,
+    "ambulance_candidates": [
+      {
+        "frame_idx": 110,
+        "time_s": 3.67,
+        "ambulance_conf": 0.7,
+        "ambulance_bbox": [
+          342,
+          353,
+          178,
+          208
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      },
+      {
+        "frame_idx": 190,
+        "time_s": 6.339,
+        "ambulance_conf": 0.65,
+        "ambulance_bbox": [
+          179,
+          403,
+          250,
+          250
+        ],
+        "roi_vehicle_count_this_frame": 2,
+        "all_labels_this_frame": [
+          "Ambulance",
+          "Bus"
+        ],
+        "overlaps_with_others": [
+          {
+            "other_label": "Bus",
+            "other_conf": 0.44,
+            "other_bbox": [
+              180,
+              404,
+              246,
+              247
+            ],
+            "iou": 0.9722,
+            "pct_ambulance_covered": 97.2,
+            "pct_other_covered": 100.0
+          }
+        ],
+        "best_overlap": {
+          "other_label": "Bus",
+          "other_conf": 0.44,
+          "other_bbox": [
+            180,
+            404,
+            246,
+            247
+          ],
+          "iou": 0.9722,
+          "pct_ambulance_covered": 97.2,
+          "pct_other_covered": 100.0
+        }
+      },
+      {
+        "frame_idx": 200,
+        "time_s": 6.672,
+        "ambulance_conf": 0.62,
+        "ambulance_bbox": [
+          150,
+          411,
+          249,
+          255
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      },
+      {
+        "frame_idx": 220,
+        "time_s": 7.34,
+        "ambulance_conf": 0.74,
+        "ambulance_bbox": [
+          81,
+          425,
+          286,
+          274
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      },
+      {
+        "frame_idx": 230,
+        "time_s": 7.673,
+        "ambulance_conf": 0.8,
+        "ambulance_bbox": [
+          44,
+          431,
+          298,
+          278
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      },
+      {
+        "frame_idx": 1090,
+        "time_s": 36.364,
+        "ambulance_conf": 0.56,
+        "ambulance_bbox": [
+          330,
+          363,
+          196,
+          194
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      }
+    ]
+  },
+  {
+    "video": "clip_04.mp4",
+    "status": "OK",
+    "selected_profile": "profile_a_original",
+    "profile_scores": {
+      "profile_a_original": "good=309 inliers=262",
+      "profile_b_ambulance_framing": "good=178 inliers=131"
+    },
+    "source_fps": 30.0,
+    "ambulance_candidate_count": 8,
+    "ambulance_candidates": [
+      {
+        "frame_idx": 1390,
+        "time_s": 46.333,
+        "ambulance_conf": 0.42,
+        "ambulance_bbox": [
+          196,
+          417,
+          197,
+          192
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      },
+      {
+        "frame_idx": 1470,
+        "time_s": 49.0,
+        "ambulance_conf": 0.45,
+        "ambulance_bbox": [
+          281,
+          363,
+          201,
+          234
+        ],
+        "roi_vehicle_count_this_frame": 2,
+        "all_labels_this_frame": [
+          "Motorcycle",
+          "Ambulance"
+        ],
+        "overlaps_with_others": [
+          {
+            "other_label": "Motorcycle",
+            "other_conf": 0.56,
+            "other_bbox": [
+              348,
+              667,
+              51,
+              86
+            ],
+            "iou": 0.0,
+            "pct_ambulance_covered": 0.0,
+            "pct_other_covered": 0.0
+          }
+        ],
+        "best_overlap": {
+          "other_label": "Motorcycle",
+          "other_conf": 0.56,
+          "other_bbox": [
+            348,
+            667,
+            51,
+            86
+          ],
+          "iou": 0.0,
+          "pct_ambulance_covered": 0.0,
+          "pct_other_covered": 0.0
+        }
+      },
+      {
+        "frame_idx": 1500,
+        "time_s": 50.0,
+        "ambulance_conf": 0.62,
+        "ambulance_bbox": [
+          261,
+          398,
+          191,
+          221
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      },
+      {
+        "frame_idx": 1580,
+        "time_s": 52.667,
+        "ambulance_conf": 0.71,
+        "ambulance_bbox": [
+          190,
+          422,
+          241,
+          228
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      },
+      {
+        "frame_idx": 1600,
+        "time_s": 53.333,
+        "ambulance_conf": 0.54,
+        "ambulance_bbox": [
+          163,
+          435,
+          260,
+          229
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      },
+      {
+        "frame_idx": 1610,
+        "time_s": 53.667,
+        "ambulance_conf": 0.69,
+        "ambulance_bbox": [
+          149,
+          437,
+          267,
+          241
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      },
+      {
+        "frame_idx": 1620,
+        "time_s": 54.0,
+        "ambulance_conf": 0.54,
+        "ambulance_bbox": [
+          133,
+          438,
+          277,
+          246
+        ],
+        "roi_vehicle_count_this_frame": 2,
+        "all_labels_this_frame": [
+          "Bus",
+          "Ambulance"
+        ],
+        "overlaps_with_others": [
+          {
+            "other_label": "Bus",
+            "other_conf": 0.62,
+            "other_bbox": [
+              130,
+              439,
+              279,
+              242
+            ],
+            "iou": 0.9699,
+            "pct_ambulance_covered": 98.0,
+            "pct_other_covered": 98.9
+          }
+        ],
+        "best_overlap": {
+          "other_label": "Bus",
+          "other_conf": 0.62,
+          "other_bbox": [
+            130,
+            439,
+            279,
+            242
+          ],
+          "iou": 0.9699,
+          "pct_ambulance_covered": 98.0,
+          "pct_other_covered": 98.9
+        }
+      },
+      {
+        "frame_idx": 1650,
+        "time_s": 55.0,
+        "ambulance_conf": 0.53,
+        "ambulance_bbox": [
+          112,
+          448,
+          283,
+          257
+        ],
+        "roi_vehicle_count_this_frame": 3,
+        "all_labels_this_frame": [
+          "Ambulance",
+          "Bus",
+          "Car"
+        ],
+        "overlaps_with_others": [
+          {
+            "other_label": "Bus",
+            "other_conf": 0.46,
+            "other_bbox": [
+              113,
+              449,
+              281,
+              255
+            ],
+            "iou": 0.9852,
+            "pct_ambulance_covered": 98.5,
+            "pct_other_covered": 100.0
+          },
+          {
+            "other_label": "Car",
+            "other_conf": 0.41,
+            "other_bbox": [
+              395,
+              513,
+              99,
+              103
+            ],
+            "iou": 0.0,
+            "pct_ambulance_covered": 0.0,
+            "pct_other_covered": 0.0
+          }
+        ],
+        "best_overlap": {
+          "other_label": "Bus",
+          "other_conf": 0.46,
+          "other_bbox": [
+            113,
+            449,
+            281,
+            255
+          ],
+          "iou": 0.9852,
+          "pct_ambulance_covered": 98.5,
+          "pct_other_covered": 100.0
+        }
+      }
+    ]
+  },
+  {
+    "video": "clip_05.mp4",
+    "status": "OK",
+    "selected_profile": "profile_a_original",
+    "profile_scores": {
+      "profile_a_original": "good=248 inliers=199",
+      "profile_b_ambulance_framing": "good=160 inliers=110"
+    },
+    "source_fps": 29.98641304347826,
+    "ambulance_candidate_count": 0,
+    "ambulance_candidates": []
+  },
+  {
+    "video": "clip_06.mp4",
+    "status": "OK",
+    "selected_profile": "profile_a_original",
+    "profile_scores": {
+      "profile_a_original": "good=312 inliers=274",
+      "profile_b_ambulance_framing": "good=159 inliers=118"
+    },
+    "source_fps": 30.0,
+    "ambulance_candidate_count": 0,
+    "ambulance_candidates": []
+  },
+  {
+    "video": "clip_07.mp4",
+    "status": "OK",
+    "selected_profile": "profile_a_original",
+    "profile_scores": {
+      "profile_a_original": "good=265 inliers=191",
+      "profile_b_ambulance_framing": "good=180 inliers=123"
+    },
+    "source_fps": 11.263163527823245,
+    "ambulance_candidate_count": 6,
+    "ambulance_candidates": [
+      {
+        "frame_idx": 1380,
+        "time_s": 122.523,
+        "ambulance_conf": 0.73,
+        "ambulance_bbox": [
+          356,
+          381,
+          121,
+          119
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      },
+      {
+        "frame_idx": 1390,
+        "time_s": 123.411,
+        "ambulance_conf": 0.74,
+        "ambulance_bbox": [
+          354,
+          386,
+          124,
+          117
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      },
+      {
+        "frame_idx": 1400,
+        "time_s": 124.299,
+        "ambulance_conf": 0.72,
+        "ambulance_bbox": [
+          353,
+          393,
+          129,
+          114
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      },
+      {
+        "frame_idx": 1410,
+        "time_s": 125.187,
+        "ambulance_conf": 0.54,
+        "ambulance_bbox": [
+          351,
+          393,
+          137,
+          121
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      },
+      {
+        "frame_idx": 1420,
+        "time_s": 126.075,
+        "ambulance_conf": 0.41,
+        "ambulance_bbox": [
+          350,
+          393,
+          136,
+          125
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      },
+      {
+        "frame_idx": 1430,
+        "time_s": 126.963,
+        "ambulance_conf": 0.5,
+        "ambulance_bbox": [
+          350,
+          396,
+          136,
+          125
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      }
+    ]
+  },
+  {
+    "video": "clip_08.mp4",
+    "status": "OK",
+    "selected_profile": "profile_a_original",
+    "profile_scores": {
+      "profile_a_original": "good=524 inliers=498",
+      "profile_b_ambulance_framing": "good=230 inliers=182"
+    },
+    "source_fps": 29.97556754555635,
+    "ambulance_candidate_count": 1,
+    "ambulance_candidates": [
+      {
+        "frame_idx": 950,
+        "time_s": 31.692,
+        "ambulance_conf": 0.42,
+        "ambulance_bbox": [
+          359,
+          486,
+          98,
+          102
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      }
+    ]
+  },
+  {
+    "video": "clip_09.mp4",
+    "status": "OK",
+    "selected_profile": "profile_a_original",
+    "profile_scores": {
+      "profile_a_original": "good=2823 inliers=2820",
+      "profile_b_ambulance_framing": "good=212 inliers=153"
+    },
+    "source_fps": 29.989035087719298,
+    "ambulance_candidate_count": 4,
+    "ambulance_candidates": [
+      {
+        "frame_idx": 1940,
+        "time_s": 64.69,
+        "ambulance_conf": 0.54,
+        "ambulance_bbox": [
+          358,
+          486,
+          94,
+          96
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      },
+      {
+        "frame_idx": 1950,
+        "time_s": 65.024,
+        "ambulance_conf": 0.57,
+        "ambulance_bbox": [
+          353,
+          488,
+          111,
+          101
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      },
+      {
+        "frame_idx": 4220,
+        "time_s": 140.718,
+        "ambulance_conf": 0.48,
+        "ambulance_bbox": [
+          234,
+          506,
+          148,
+          158
+        ],
+        "roi_vehicle_count_this_frame": 2,
+        "all_labels_this_frame": [
+          "Ambulance",
+          "Truck"
+        ],
+        "overlaps_with_others": [
+          {
+            "other_label": "Truck",
+            "other_conf": 0.41,
+            "other_bbox": [
+              236,
+              508,
+              145,
+              154
+            ],
+            "iou": 0.9549,
+            "pct_ambulance_covered": 95.5,
+            "pct_other_covered": 100.0
+          }
+        ],
+        "best_overlap": {
+          "other_label": "Truck",
+          "other_conf": 0.41,
+          "other_bbox": [
+            236,
+            508,
+            145,
+            154
+          ],
+          "iou": 0.9549,
+          "pct_ambulance_covered": 95.5,
+          "pct_other_covered": 100.0
+        }
+      },
+      {
+        "frame_idx": 5070,
+        "time_s": 169.062,
+        "ambulance_conf": 0.47,
+        "ambulance_bbox": [
+          356,
+          603,
+          76,
+          85
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      }
+    ]
+  },
+  {
+    "video": "clip_10.mp4",
+    "status": "OK",
+    "selected_profile": "profile_a_original",
+    "profile_scores": {
+      "profile_a_original": "good=636 inliers=595",
+      "profile_b_ambulance_framing": "good=228 inliers=184"
+    },
+    "source_fps": 29.96389891696751,
+    "ambulance_candidate_count": 0,
+    "ambulance_candidates": []
+  },
+  {
+    "video": "clip_11.mp4",
+    "status": "OK",
+    "selected_profile": "profile_a_original",
+    "profile_scores": {
+      "profile_a_original": "good=235 inliers=198",
+      "profile_b_ambulance_framing": "good=142 inliers=85"
+    },
+    "source_fps": 30.003493949115395,
+    "ambulance_candidate_count": 4,
+    "ambulance_candidates": [
+      {
+        "frame_idx": 3930,
+        "time_s": 130.985,
+        "ambulance_conf": 0.46,
+        "ambulance_bbox": [
+          358,
+          358,
+          135,
+          160
+        ],
+        "roi_vehicle_count_this_frame": 3,
+        "all_labels_this_frame": [
+          "Motorcycle",
+          "Ambulance",
+          "Bus"
+        ],
+        "overlaps_with_others": [
+          {
+            "other_label": "Bus",
+            "other_conf": 0.45,
+            "other_bbox": [
+              112,
+              414,
+              260,
+              221
+            ],
+            "iou": 0.0188,
+            "pct_ambulance_covered": 6.7,
+            "pct_other_covered": 2.5
+          },
+          {
+            "other_label": "Motorcycle",
+            "other_conf": 0.62,
+            "other_bbox": [
+              354,
+              543,
+              57,
+              125
+            ],
+            "iou": 0.0,
+            "pct_ambulance_covered": 0.0,
+            "pct_other_covered": 0.0
+          }
+        ],
+        "best_overlap": {
+          "other_label": "Bus",
+          "other_conf": 0.45,
+          "other_bbox": [
+            112,
+            414,
+            260,
+            221
+          ],
+          "iou": 0.0188,
+          "pct_ambulance_covered": 6.7,
+          "pct_other_covered": 2.5
+        }
+      },
+      {
+        "frame_idx": 4260,
+        "time_s": 141.983,
+        "ambulance_conf": 0.44,
+        "ambulance_bbox": [
+          181,
+          417,
+          228,
+          224
+        ],
+        "roi_vehicle_count_this_frame": 3,
+        "all_labels_this_frame": [
+          "Bus",
+          "Ambulance",
+          "Motorcycle"
+        ],
+        "overlaps_with_others": [
+          {
+            "other_label": "Bus",
+            "other_conf": 0.59,
+            "other_bbox": [
+              179,
+              418,
+              234,
+              223
+            ],
+            "iou": 0.9701,
+            "pct_ambulance_covered": 99.6,
+            "pct_other_covered": 97.4
+          },
+          {
+            "other_label": "Motorcycle",
+            "other_conf": 0.41,
+            "other_bbox": [
+              449,
+              457,
+              39,
+              108
+            ],
+            "iou": 0.0,
+            "pct_ambulance_covered": 0.0,
+            "pct_other_covered": 0.0
+          }
+        ],
+        "best_overlap": {
+          "other_label": "Bus",
+          "other_conf": 0.59,
+          "other_bbox": [
+            179,
+            418,
+            234,
+            223
+          ],
+          "iou": 0.9701,
+          "pct_ambulance_covered": 99.6,
+          "pct_other_covered": 97.4
+        }
+      },
+      {
+        "frame_idx": 4270,
+        "time_s": 142.317,
+        "ambulance_conf": 0.74,
+        "ambulance_bbox": [
+          151,
+          419,
+          254,
+          235
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      },
+      {
+        "frame_idx": 4280,
+        "time_s": 142.65,
+        "ambulance_conf": 0.46,
+        "ambulance_bbox": [
+          104,
+          424,
+          295,
+          245
+        ],
+        "roi_vehicle_count_this_frame": 2,
+        "all_labels_this_frame": [
+          "Bus",
+          "Ambulance"
+        ],
+        "overlaps_with_others": [
+          {
+            "other_label": "Bus",
+            "other_conf": 0.56,
+            "other_bbox": [
+              105,
+              427,
+              294,
+              241
+            ],
+            "iou": 0.9803,
+            "pct_ambulance_covered": 98.0,
+            "pct_other_covered": 100.0
+          }
+        ],
+        "best_overlap": {
+          "other_label": "Bus",
+          "other_conf": 0.56,
+          "other_bbox": [
+            105,
+            427,
+            294,
+            241
+          ],
+          "iou": 0.9803,
+          "pct_ambulance_covered": 98.0,
+          "pct_other_covered": 100.0
+        }
+      }
+    ]
+  },
+  {
+    "video": "ambulense.mp4",
+    "status": "OK",
+    "selected_profile": "profile_b_ambulance_framing",
+    "profile_scores": {
+      "profile_a_original": "good=276 inliers=227",
+      "profile_b_ambulance_framing": "good=2833 inliers=2831"
+    },
+    "source_fps": 29.989270386266096,
+    "ambulance_candidate_count": 4,
+    "ambulance_candidates": [
+      {
+        "frame_idx": 710,
+        "time_s": 23.675,
+        "ambulance_conf": 0.48,
+        "ambulance_bbox": [
+          1,
+          798,
+          43,
+          142
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      },
+      {
+        "frame_idx": 770,
+        "time_s": 25.676,
+        "ambulance_conf": 0.48,
+        "ambulance_bbox": [
+          1,
+          755,
+          113,
+          132
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      },
+      {
+        "frame_idx": 780,
+        "time_s": 26.009,
+        "ambulance_conf": 0.43,
+        "ambulance_bbox": [
+          1,
+          745,
+          123,
+          132
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      },
+      {
+        "frame_idx": 1660,
+        "time_s": 55.353,
+        "ambulance_conf": 0.54,
+        "ambulance_bbox": [
+          43,
+          946,
+          91,
+          77
+        ],
+        "roi_vehicle_count_this_frame": 1,
+        "all_labels_this_frame": [
+          "Ambulance"
+        ],
+        "overlaps_with_others": [],
+        "best_overlap": null
+      }
+    ]
+  }
+]

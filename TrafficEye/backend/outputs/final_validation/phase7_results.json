@@ -1,0 +1,138 @@
+{
+  "Carx1": {
+    "status": "PASS",
+    "clearance": 1.9963,
+    "green": 5.12,
+    "bad_values": [],
+    "fifo_ok": true,
+    "green_formula_ok": true
+  },
+  "Carx5": {
+    "status": "PASS",
+    "clearance": 8.7887,
+    "green": 11.91,
+    "bad_values": [],
+    "fifo_ok": true,
+    "green_formula_ok": true
+  },
+  "Carx10": {
+    "status": "PASS",
+    "clearance": 17.9722,
+    "green": 21.09,
+    "bad_values": [],
+    "fifo_ok": true,
+    "green_formula_ok": true
+  },
+  "Carx15": {
+    "status": "PASS",
+    "clearance": 27.1556,
+    "green": 30.28,
+    "bad_values": [],
+    "fifo_ok": true,
+    "green_formula_ok": true
+  },
+  "Motorcyclex1": {
+    "status": "PASS",
+    "clearance": 1.7167,
+    "green": 4.84,
+    "bad_values": [],
+    "fifo_ok": true,
+    "green_formula_ok": true
+  },
+  "Motorcyclex5": {
+    "status": "PASS",
+    "clearance": 4.2595,
+    "green": 7.38,
+    "bad_values": [],
+    "fifo_ok": true,
+    "green_formula_ok": true
+  },
+  "Motorcyclex10": {
+    "status": "PASS",
+    "clearance": 8.8598,
+    "green": 11.98,
+    "bad_values": [],
+    "fifo_ok": true,
+    "green_formula_ok": true
+  },
+  "Motorcyclex15": {
+    "status": "PASS",
+    "clearance": 13.4602,
+    "green": 16.58,
+    "bad_values": [],
+    "fifo_ok": true,
+    "green_formula_ok": true
+  },
+  "Busx1": {
+    "status": "PASS",
+    "clearance": 2.9017,
+    "green": 6.02,
+    "bad_values": [],
+    "fifo_ok": true,
+    "green_formula_ok": true
+  },
+  "Busx5": {
+    "status": "PASS",
+    "clearance": 27.3315,
+    "green": 30.45,
+    "bad_values": [],
+    "fifo_ok": true,
+    "green_formula_ok": true
+  },
+  "Busx10": {
+    "status": "PASS",
+    "clearance": 55.2109,
+    "green": 58.33,
+    "bad_values": [],
+    "fifo_ok": true,
+    "green_formula_ok": true
+  },
+  "Busx15": {
+    "status": "PASS",
+    "clearance": 83.0903,
+    "green": 86.21,
+    "bad_values": [],
+    "fifo_ok": true,
+    "green_formula_ok": true
+  },
+  "Truckx1": {
+    "status": "PASS",
+    "clearance": 1.7329,
+    "green": 4.85,
+    "bad_values": [],
+    "fifo_ok": true,
+    "green_formula_ok": true
+  },
+  "Truckx5": {
+    "status": "PASS",
+    "clearance": 23.0395,
+    "green": 26.16,
+    "bad_values": [],
+    "fifo_ok": true,
+    "green_formula_ok": true
+  },
+  "Truckx10": {
+    "status": "PASS",
+    "clearance": 46.6535,
+    "green": 49.77,
+    "bad_values": [],
+    "fifo_ok": true,
+    "green_formula_ok": true
+  },
+  "Truckx15": {
+    "status": "PASS",
+    "clearance": 70.2674,
+    "green": 73.39,
+    "bad_values": [],
+    "fifo_ok": true,
+    "green_formula_ok": true
+  },
+  "mixed_10": {
+    "status": "PASS",
+    "clearance": 29.1327,
+    "green": 32.25,
+    "bad_values": [],
+    "fifo_ok": true,
+    "green_formula_ok": true
+  }
+}
