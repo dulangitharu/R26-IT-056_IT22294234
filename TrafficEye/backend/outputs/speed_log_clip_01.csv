@@ -1,0 +1,7 @@
+video_name,vehicle_id,vehicle_type,line_a_frame,line_a_time_s,line_b_frame,line_b_time_s,travel_time_s,speed_mps
+clip_01.mp4,21,Car,191,18.238,267,25.495,7.257,0.965
+clip_01.mp4,35,Car,259,24.731,325,31.033,6.302,1.111
+clip_01.mp4,29,Motorcycle,267,25.495,333,31.797,6.302,1.111
+clip_01.mp4,37,Car,369,35.235,421,40.2,4.965,1.41
+clip_01.mp4,54,Car,727,69.419,749,71.52,2.101,3.332
+clip_01.mp4,83,Bus,1463,139.698,1629,155.549,15.851,0.442

@@ -1,0 +1,7 @@
+video_name,vehicle_id,vehicle_type,line_a_frame,line_a_time_s,line_b_frame,line_b_time_s,travel_time_s,speed_mps
+clip_03.mp4,15,Ambulance,162,5.405,219,7.306,1.901,3.682
+clip_03.mp4,37,Tuktuk,272,9.074,313,10.442,1.368,5.117
+clip_03.mp4,46,Car,485,16.18,552,18.416,2.236,3.131
+clip_03.mp4,53,Car,618,20.617,664,22.152,1.535,4.56
+clip_03.mp4,82,Car,1060,35.363,1080,36.031,0.668,10.479
+clip_03.mp4,92,Bus,1115,37.198,1167,38.933,1.735,4.035

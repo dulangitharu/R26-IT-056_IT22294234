@@ -1,0 +1,9 @@
+vehicle_id,vehicle_type,frame_number,pass_time_seconds
+15,Ambulance,219,7.306
+37,Tuktuk,313,10.442
+44,Motorcycle,389,12.978
+46,Car,552,18.416
+53,Car,664,22.152
+77,Car,1038,34.629
+82,Car,1080,36.031
+92,Bus,1167,38.933
