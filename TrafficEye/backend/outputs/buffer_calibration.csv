@@ -1,0 +1,2 @@
+median_gap_s,p85_gap_s,p90_gap_s,raw_buffer_s,final_safety_buffer_s,valid_gap_count,removed_small_gap_count,removed_large_gap_count,first_crossing_count
+2.9,6.02,6.517,3.12,3.12,289,20,24,11

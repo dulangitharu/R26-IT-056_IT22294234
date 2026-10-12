@@ -1,0 +1,16 @@
+vehicle_type,position_group,sample_count,avg_headway_s,median_headway_s,trimmed_mean_headway_s,min_headway_s,max_headway_s,sample_quality
+Ambulance,P5+,1,7.067,7.067,7.067,7.067,7.067,LOW
+Bus,P2,1,4.802,4.802,4.802,4.802,4.802,LOW
+Bus,P3-4,3,6.159,6.503,6.159,5.338,6.635,LOW
+Bus,P5+,27,3.549,2.937,3.465,1.433,6.5,GOOD
+Car,P2,3,2.044,1.366,2.044,1.3,3.467,LOW
+Car,P3-4,8,4.372,4.136,4.372,2.77,6.78,LOW
+Car,P5+,94,3.647,3.25,3.468,0.633,8.8,GOOD
+Motorcycle,P2,1,2.2,2.2,2.2,2.2,2.2,LOW
+Motorcycle,P3-4,3,4.013,2.733,4.013,2.536,6.769,LOW
+Motorcycle,P5+,75,2.843,2.135,2.524,0.6,9.1,GOOD
+Truck,P2,1,3.668,3.668,3.668,3.668,3.668,LOW
+Truck,P3-4,1,3.6,3.6,3.6,3.6,3.6,LOW
+Truck,P5+,25,4.159,3.435,4.02,1.734,8.369,GOOD
+Tuktuk,P2,1,3.136,3.136,3.136,3.136,3.136,LOW
+Tuktuk,P5+,36,3.729,2.968,3.596,0.733,8.8,GOOD
