@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>YOLOv5 vs YOLOv8 Model Comparison — TrafficEye</title>
+<style>
+  :root {
+    --bg: #0f1420;
+    --panel: #161d2e;
+    --panel-border: #262f45;
+    --text: #e6e9f2;
+    --text-dim: #9aa4bd;
+    --v5: #5b8def;
+    --v8: #f2a541;
+    --winner: #35c98c;
+    --final: #35c98c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 40px 24px 80px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 1000px; margin: 0 auto; }
+  h1 {
+    font-size: 1.8rem;
+    margin: 0 0 8px;
+  }
+  .subtitle {
+    color: var(--text-dim);
+    margin: 0 0 36px;
+    font-size: 0.95rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin: 48px 0 16px;
+    border-left: 4px solid var(--v8);
+    padding-left: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  th, td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--panel-border);
+  }
+  th {
+    background: #1c2438;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--text-dim);
+  }
+  tr:last-child td { border-bottom: none; }
+  td.winner {
+    color: var(--winner);
+    font-weight: 600;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 999px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+  .badge-v5 { background: rgba(91,141,239,0.18); color: var(--v5); }
+  .badge-v8 { background: rgba(242,165,65,0.18); color: var(--v8); }
+
+  .winner-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+  }
+  .winner-card {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .winner-card .metric {
+    color: var(--text-dim);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .winner-card .model {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 4px;
+  }
+  .winner-card.v5 .model { color: var(--v5); }
+  .winner-card.v8 .model { color: var(--v8); }
+
+  .final-box {
+    background: linear-gradient(135deg, rgba(53,201,140,0.14), rgba(53,201,140,0.04));
+    border: 1px solid var(--final);
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+  }
+  .final-box .label {
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .final-box .model {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--final);
+    margin: 8px 0 0;
+  }
+
+  .explain {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 8px;
+    padding: 20px 24px;
+  }
+  .explain p { margin: 0 0 12px; }
+  .explain p:last-child { margin-bottom: 0; }
+
+  .evidence-block {
+    margin-bottom: 32px;
+  }
+  .evidence-block h3 {
+    font-size: 1rem;
+    margin: 0 0 12px;
+    color: var(--text-dim);
+    font-weight: 600;
+  }
+  .evidence-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .evidence-pair figure {
+    margin: 0;
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 8px;
+    padding: 12px;
+  }
+  .evidence-pair img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+    background: #fff;
+  }
+  .evidence-pair figcaption {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    text-align: center;
+  }
+  @media (max-width: 640px) {
+    .evidence-pair { grid-template-columns: 1fr; }
+  }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--panel-border);
+    color: var(--text-dim);
+    font-size: 0.8rem;
+  }
+
+  /* ── Video Inference Comparison (additive; talks only to :8001) ─────────── */
+  .vic-intro { color: var(--text-dim); font-size: 0.9rem; margin: 0 0 16px; }
+  .vic-status {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-left: 4px solid var(--text-dim);
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+  }
+  .vic-status.running { border-left-color: var(--winner); color: var(--text); }
+  .vic-status.paused  { border-left-color: var(--v8); }
+  .vic-status.error   { border-left-color: #f2555a; color: #ffb3b5; }
+  .vic-status.ready   { border-left-color: var(--v5); }
+
+  .vic-upload {
+    border: 2px dashed var(--panel-border);
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: border-color .2s, background .2s;
+    margin-bottom: 20px;
+  }
+  .vic-upload:hover, .vic-upload.dragover { border-color: var(--v8); background: rgba(242,165,65,0.05); }
+  .vic-upload.has-file { border-style: solid; border-color: var(--winner); background: rgba(53,201,140,0.05); }
+  .vic-upload input[type=file] { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+  .vic-upload-icon { font-size: 30px; }
+  .vic-upload-title { font-weight: 600; margin: 6px 0 2px; }
+  .vic-upload-sub { color: var(--text-dim); font-size: 0.82rem; }
+  .vic-file-name { color: var(--winner); font-size: 0.85rem; margin-top: 8px; min-height: 1em; }
+
+  .vic-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .vic-panel {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .vic-panel.v5 { border-top: 3px solid var(--v5); }
+  .vic-panel.v8 { border-top: 3px solid var(--v8); }
+  .vic-panel-head {
+    padding: 10px 14px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.03em;
+    border-bottom: 1px solid var(--panel-border);
+  }
+  .vic-panel.v5 .vic-panel-head { color: var(--v5); }
+  .vic-panel.v8 .vic-panel-head { color: var(--v8); }
+  .vic-video-wrap {
+    position: relative;
+    background: #000;
+    aspect-ratio: 3 / 2;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .vic-video-wrap img { width: 100%; height: 100%; object-fit: contain; display: none; }
+  .vic-ph { color: var(--text-dim); font-size: 0.85rem; }
+  .vic-info { padding: 12px 14px; display: flex; flex-direction: column; gap: 6px; }
+  .vic-info-row {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-size: 0.85rem; color: var(--text-dim);
+  }
+  .vic-info-row b { color: var(--text); font-size: 1rem; font-variant-numeric: tabular-nums; }
+  .vic-det {
+    margin-top: 4px; display: flex; flex-wrap: wrap; gap: 6px; min-height: 26px;
+  }
+  .vic-chip {
+    background: #1c2438;
+    border: 1px solid var(--panel-border);
+    border-radius: 5px;
+    padding: 3px 8px;
+    font-size: 0.8rem;
+  }
+  .vic-chip b { color: var(--winner); }
+  .vic-muted { color: var(--text-dim); font-size: 0.8rem; }
+
+  .vic-progress {
+    height: 5px; background: var(--panel-border); border-radius: 3px; overflow: hidden; margin-bottom: 14px;
+  }
+  .vic-progress-fill {
+    height: 100%; width: 0%;
+    background: linear-gradient(90deg, var(--v5), var(--v8));
+    transition: width .25s;
+  }
+  .vic-controls { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .vic-controls button {
+    font: inherit; font-weight: 600;
+    padding: 8px 18px;
+    border: 1px solid var(--panel-border);
+    border-radius: 6px;
+    background: #1c2438;
+    color: var(--text);
+    cursor: pointer;
+    transition: border-color .15s, color .15s;
+  }
+  .vic-controls button:hover:not(:disabled) { border-color: var(--v8); color: var(--v8); }
+  .vic-controls button:disabled { opacity: .4; cursor: not-allowed; }
+  .vic-speed { margin-left: auto; color: var(--text-dim); font-size: 0.85rem; }
+  .vic-speed select {
+    font: inherit;
+    background: #1c2438; color: var(--text);
+    border: 1px solid var(--panel-border); border-radius: 6px;
+    padding: 6px 8px; margin-left: 6px;
+  }
+  @media (max-width: 860px) {
+    .vic-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>YOLOv5 vs YOLOv8 Model Comparison — TrafficEye</h1>
+  <p class="subtitle">Baseline comparison evidence for model selection in the TrafficEye pipeline.</p>
+
+  <h2>Metrics Table</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Model</th>
+        <th>Precision</th>
+        <th>Recall</th>
+        <th>mAP50</th>
+        <th>mAP50-95</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>YOLOv5n <span class="badge badge-v5">baseline</span></td>
+        <td>0.769</td>
+        <td class="winner">0.796</td>
+        <td>0.836</td>
+        <td>0.537</td>
+      </tr>
+      <tr>
+        <td>YOLOv8n <span class="badge badge-v8">selected</span></td>
+        <td class="winner">0.802</td>
+        <td>0.794</td>
+        <td class="winner">0.845</td>
+        <td class="winner">0.594</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Metric Winners</h2>
+  <div class="winner-grid">
+    <div class="winner-card v8">
+      <div class="metric">Precision</div>
+      <div class="model">YOLOv8</div>
+    </div>
+    <div class="winner-card v5">
+      <div class="metric">Recall</div>
+      <div class="model">YOLOv5 <span class="badge badge-v5">by 0.002</span></div>
+    </div>
+    <div class="winner-card v8">
+      <div class="metric">mAP50</div>
+      <div class="model">YOLOv8</div>
+    </div>
+    <div class="winner-card v8">
+      <div class="metric">mAP50-95</div>
+      <div class="model">YOLOv8</div>
+    </div>
+  </div>
+
+  <h2>Final Decision</h2>
+  <div class="final-box">
+    <div class="label">Final selected model for TrafficEye</div>
+    <div class="model">YOLOv8n</div>
+  </div>
+
+  <h2>Why YOLOv8 Was Selected</h2>
+  <div class="explain">
+    <p>After fair retraining using the same dataset and training settings, YOLOv8n performed better in Precision, mAP50, and mAP50-95. YOLOv5n had only a very small Recall advantage of 0.002. Therefore, YOLOv8n was selected as the final model for TrafficEye.</p>
+  </div>
+
+  <h2>Video Inference Comparison</h2>
+  <p class="vic-intro">
+    Upload one traffic video. The <strong>exact same source frames</strong> are run through the real
+    trained <strong style="color:var(--v5)">YOLOv5n</strong> baseline and the real trained
+    <strong style="color:var(--v8)">YOLOv8n</strong> model — same confidence threshold (0.4), same
+    input frame — so the two panels below are a fair, synchronised, side-by-side view of what each
+    model actually detects. This is the visual demonstration of why the two models were compared.
+  </p>
+
+  <div id="vicStatus" class="vic-status">Upload a traffic video to begin comparison</div>
+
+  <div id="vicUpload" class="vic-upload">
+    <input type="file" id="vicFile" accept="video/*,.mp4,.avi,.mov,.mkv,.webm" />
+    <div class="vic-upload-icon">📹</div>
+    <div class="vic-upload-title">Drop a traffic video here, or click to browse</div>
+    <div class="vic-upload-sub">MP4, AVI, MOV, MKV — ONE upload, processed independently by both models</div>
+    <div id="vicFileName" class="vic-file-name"></div>
+  </div>
+
+  <div class="vic-grid">
+    <div class="vic-panel v5">
+      <div class="vic-panel-head">YOLOv5n — BASELINE</div>
+      <div class="vic-video-wrap">
+        <img id="vicImg5" alt="YOLOv5n annotated output" />
+        <div class="vic-ph" id="vicPh5">Waiting for START</div>
+      </div>
+      <div class="vic-info">
+        <div class="vic-info-row"><span>Vehicle count</span><b id="vic5Count">0</b></div>
+        <div class="vic-info-row"><span>Processing FPS</span><b id="vic5Fps">–</b></div>
+        <div class="vic-info-row"><span>Frame / progress</span><b id="vic5Frame">0 / 0</b></div>
+        <div class="vic-det" id="vic5Det"><span class="vic-muted">No detections yet</span></div>
+      </div>
+    </div>
+
+    <div class="vic-panel v8">
+      <div class="vic-panel-head">YOLOv8n — SELECTED MODEL</div>
+      <div class="vic-video-wrap">
+        <img id="vicImg8" alt="YOLOv8n annotated output" />
+        <div class="vic-ph" id="vicPh8">Waiting for START</div>
+      </div>
+      <div class="vic-info">
+        <div class="vic-info-row"><span>Vehicle count</span><b id="vic8Count">0</b></div>
+        <div class="vic-info-row"><span>Processing FPS</span><b id="vic8Fps">–</b></div>
+        <div class="vic-info-row"><span>Frame / progress</span><b id="vic8Frame">0 / 0</b></div>
+        <div class="vic-det" id="vic8Det"><span class="vic-muted">No detections yet</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="vic-progress"><div class="vic-progress-fill" id="vicProgress"></div></div>
+
+  <div class="vic-controls">
+    <button id="vicStart" type="button" disabled>▶ START</button>
+    <button id="vicPause" type="button" disabled>⏸ PAUSE</button>
+    <button id="vicStop" type="button" disabled>⏹ STOP</button>
+    <span class="vic-speed">Speed (both models)
+      <select id="vicSpeed">
+        <option value="0.5">0.5×</option>
+        <option value="1" selected>1×</option>
+        <option value="2">2×</option>
+        <option value="4">4×</option>
+      </select>
+    </span>
+  </div>
+
+  <h2>Visual Evidence</h2>
+
+  <div class="evidence-block">
+    <h3>Confusion Matrix</h3>
+    <div class="evidence-pair">
+      <figure>
+        <img src="assets/yolov5_confusion_matrix.png" alt="YOLOv5 confusion matrix">
+        <figcaption>YOLOv5n — confusion_matrix.png</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/yolov8_confusion_matrix.png" alt="YOLOv8 confusion matrix">
+        <figcaption>YOLOv8n — confusion_matrix.png</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="evidence-block">
+    <h3>Precision-Recall Curve</h3>
+    <div class="evidence-pair">
+      <figure>
+        <img src="assets/yolov5_PR_curve.png" alt="YOLOv5 PR curve">
+        <figcaption>YOLOv5n — PR_curve.png</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/yolov8_BoxPR_curve.png" alt="YOLOv8 BoxPR curve">
+        <figcaption>YOLOv8n — BoxPR_curve.png</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="evidence-block">
+    <h3>Validation Batch 0 Predictions</h3>
+    <div class="evidence-pair">
+      <figure>
+        <img src="assets/yolov5_val_batch0_pred.jpg" alt="YOLOv5 validation batch 0 predictions">
+        <figcaption>YOLOv5n — val_batch0_pred.jpg</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/yolov8_val_batch0_pred.jpg" alt="YOLOv8 validation batch 0 predictions">
+        <figcaption>YOLOv8n — val_batch0_pred.jpg</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <footer>
+    Model comparison demo evidence for the TrafficEye research project. Does not modify the backend, replace any production model, or affect crossing logs, ROI files, calibration files, or uploads.
+    The Video Inference Comparison talks only to the isolated comparison backend on <code>localhost:8001</code>.
+  </footer>
+
+</div>
+
+<script>
+/* ── Video Inference Comparison — isolated demo client (talks ONLY to :8001) ──
+   Production TrafficEye (:8000) and its /upload, /ws/stream are never contacted
+   from this page. */
+(function () {
+  "use strict";
+  var CMP_API = "http://localhost:8001";
+  var CMP_WS  = "ws://localhost:8001";
+
+  var $ = function (id) { return document.getElementById(id); };
+  var uploadZone = $("vicUpload"), fileInput = $("vicFile"), fileName = $("vicFileName");
+  var statusEl = $("vicStatus");
+  var btnStart = $("vicStart"), btnPause = $("vicPause"), btnStop = $("vicStop");
+  var speedSel = $("vicSpeed");
+  var progressFill = $("vicProgress");
+
+  var ws = null, paused = false, totalFrames = 0, ready = false;
+
+  function setStatus(text, cls) {
+    statusEl.textContent = text;
+    statusEl.className = "vic-status" + (cls ? " " + cls : "");
+  }
+
+  // ── Upload ────────────────────────────────────────────────────────────────
+  ["dragover", "dragenter"].forEach(function (ev) {
+    uploadZone.addEventListener(ev, function (e) { e.preventDefault(); uploadZone.classList.add("dragover"); });
+  });
+  ["dragleave", "dragend"].forEach(function (ev) {
+    uploadZone.addEventListener(ev, function () { uploadZone.classList.remove("dragover"); });
+  });
+  uploadZone.addEventListener("drop", function (e) {
+    e.preventDefault(); uploadZone.classList.remove("dragover");
+    if (e.dataTransfer.files && e.dataTransfer.files[0]) uploadVideo(e.dataTransfer.files[0]);
+  });
+  fileInput.addEventListener("change", function () {
+    if (fileInput.files && fileInput.files[0]) uploadVideo(fileInput.files[0]);
+  });
+
+  function uploadVideo(file) {
+    if (ws) stopComparison();
+    ready = false;
+    btnStart.disabled = true;
+    uploadZone.classList.add("has-file");
+    fileName.textContent = "⏳ " + file.name;
+    setStatus("Uploading...", "");
+
+    var form = new FormData();
+    form.append("file", file);
+
+    fetch(CMP_API + "/upload", { method: "POST", body: form })
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        if (data && data.ok) {
+          totalFrames = data.total_frames || 0;
+          fileName.textContent = "✅ " + data.filename +
+            "  (" + totalFrames + " frames" + (data.duration_s ? ", " + data.duration_s + "s" : "") + ")";
+          ready = true;
+          btnStart.disabled = false;
+          setStatus("Video ready — press START", "ready");
+        } else {
+          fileName.textContent = "❌ Upload failed";
+          setStatus((data && data.error) ? data.error : "Upload failed — is the comparison backend running on :8001?", "error");
+        }
+      })
+      .catch(function () {
+        fileName.textContent = "❌ Upload failed";
+        setStatus("Could not reach the comparison backend at " + CMP_API + " — start backend/comparison_server.py on port 8001.", "error");
+      });
+  }
+
+  // ── Stream control ────────────────────────────────────────────────────────
+  btnStart.addEventListener("click", startComparison);
+  btnPause.addEventListener("click", togglePause);
+  btnStop.addEventListener("click", stopComparison);
+  speedSel.addEventListener("change", function () {
+    if (ws && ws.readyState === 1) {
+      ws.send(JSON.stringify({ action: paused ? "pause" : "resume", speed: +speedSel.value }));
+    }
+  });
+
+  function startComparison() {
+    if (!ready) return;
+    if (ws) { try { ws.close(); } catch (e) {} }
+    paused = false;
+    resetPanels();
+
+    try {
+      ws = new WebSocket(CMP_WS + "/ws/comparison");
+    } catch (e) {
+      setStatus("Could not open a WebSocket to " + CMP_WS + " — is comparison_server.py running?", "error");
+      return;
+    }
+
+    ws.onopen = function () {
+      ws.send(JSON.stringify({ action: "start", speed: +speedSel.value }));
+      btnStart.disabled = true;
+      btnPause.disabled = false;
+      btnStop.disabled = false;
+      btnPause.textContent = "⏸ PAUSE";
+      $("vicImg5").style.display = "block"; $("vicPh5").style.display = "none";
+      $("vicImg8").style.display = "block"; $("vicPh8").style.display = "none";
+      setStatus("Comparing YOLOv5 and YOLOv8", "running");
+    };
+
+    ws.onmessage = function (evt) {
+      var d;
+      try { d = JSON.parse(evt.data); } catch (e) { return; }
+      if (d.error) { setStatus(d.error, "error"); stopComparison(); return; }
+      if (d.done) {
+        setStatus("Comparison completed", "ready");
+        btnPause.disabled = true;
+        return;
+      }
+      render(d);
+    };
+
+    ws.onerror = function () {
+      setStatus("Comparison backend connection error (" + CMP_WS + "). Check that comparison_server.py is running on :8001.", "error");
+    };
+
+    ws.onclose = function () {
+      btnStart.disabled = !ready;
+      btnPause.disabled = true;
+      btnStop.disabled = true;
+    };
+  }
+
+  function togglePause() {
+    if (!ws || ws.readyState !== 1) return;
+    paused = !paused;
+    ws.send(JSON.stringify({ action: paused ? "pause" : "resume", speed: +speedSel.value }));
+    btnPause.textContent = paused ? "▶ RESUME" : "⏸ PAUSE";
+    setStatus(paused ? "Paused" : "Comparing YOLOv5 and YOLOv8", paused ? "paused" : "running");
+  }
+
+  function stopComparison() {
+    if (ws) {
+      try { if (ws.readyState === 1) ws.send(JSON.stringify({ action: "stop" })); } catch (e) {}
+      try { ws.close(); } catch (e) {}
+      ws = null;
+    }
+    paused = false;
+    btnStart.disabled = !ready;
+    btnPause.disabled = true;
+    btnStop.disabled = true;
+    btnPause.textContent = "⏸ PAUSE";
+    if (ready) setStatus("Video ready — press START", "ready");
+  }
+
+  // ── Rendering ─────────────────────────────────────────────────────────────
+  function resetPanels() {
+    ["5", "8"].forEach(function (k) {
+      $("vic" + k + "Count").textContent = "0";
+      $("vic" + k + "Fps").textContent = "–";
+      $("vic" + k + "Frame").textContent = "0 / 0";
+      $("vic" + k + "Det").innerHTML = '<span class="vic-muted">No detections yet</span>';
+    });
+    progressFill.style.width = "0%";
+  }
+
+  function detChips(classCounts) {
+    var keys = Object.keys(classCounts || {});
+    if (!keys.length) return '<span class="vic-muted">No vehicles in frame</span>';
+    return keys.map(function (label) {
+      return '<span class="vic-chip">' + label + ' <b>×' + classCounts[label] + '</b></span>';
+    }).join("");
+  }
+
+  function renderPanel(k, m, frameIdx, totalF) {
+    $("vicImg" + k).src = "data:image/jpeg;base64," + m.frame;
+    $("vic" + k + "Count").textContent = m.count;
+    $("vic" + k + "Fps").textContent = m.fps + " fps  (" + m.infer_ms + " ms)";
+    $("vic" + k + "Frame").textContent = frameIdx + " / " + (totalF || "?");
+    $("vic" + k + "Det").innerHTML = detChips(m.class_counts);
+  }
+
+  function render(d) {
+    renderPanel("5", d.v5, d.frame_idx, d.total_frames);
+    renderPanel("8", d.v8, d.frame_idx, d.total_frames);
+    progressFill.style.width = (d.progress || 0) + "%";
+  }
+})();
+</script>
+</body>
+</html>
