@@ -1,0 +1,199 @@
+{
+  "clip_02_A": {
+    "status": "PASS",
+    "independent_clearance": 4.4132,
+    "api_clearance": 4.4132,
+    "clearance_match": true,
+    "independent_green": 7.53,
+    "api_green": 7.53,
+    "green_match": true,
+    "rows": [
+      {
+        "pos": 1,
+        "type": "Car",
+        "group": "P1",
+        "dist": 4.3,
+        "speed": 2.154,
+        "raw": 1.9963,
+        "fifo": 1.9963
+      },
+      {
+        "pos": 2,
+        "type": "Motorcycle",
+        "group": "P2",
+        "dist": 7.477,
+        "speed": 2.389,
+        "raw": 3.1298,
+        "fifo": 3.1298
+      },
+      {
+        "pos": 3,
+        "type": "Motorcycle",
+        "group": "P3-4",
+        "dist": 10.654,
+        "speed": 3.134,
+        "raw": 3.3995,
+        "fifo": 3.3995
+      },
+      {
+        "pos": 4,
+        "type": "Motorcycle",
+        "group": "P3-4",
+        "dist": 13.831,
+        "speed": 3.134,
+        "raw": 4.4132,
+        "fifo": 4.4132
+      }
+    ]
+  },
+  "clip_11": {
+    "status": "PASS",
+    "independent_clearance": 8.7887,
+    "api_clearance": 8.7887,
+    "clearance_match": true,
+    "independent_green": 11.91,
+    "api_green": 11.91,
+    "green_match": true,
+    "rows": [
+      {
+        "pos": 1,
+        "type": "Car",
+        "group": "P1",
+        "dist": 4.3,
+        "speed": 2.154,
+        "raw": 1.9963,
+        "fifo": 1.9963
+      },
+      {
+        "pos": 2,
+        "type": "Car",
+        "group": "P2",
+        "dist": 9.777,
+        "speed": 2.611,
+        "raw": 3.7445,
+        "fifo": 3.7445
+      },
+      {
+        "pos": 3,
+        "type": "Car",
+        "group": "P3-4",
+        "dist": 15.254,
+        "speed": 2.992,
+        "raw": 5.0983,
+        "fifo": 5.0983
+      },
+      {
+        "pos": 4,
+        "type": "Car",
+        "group": "P3-4",
+        "dist": 20.731,
+        "speed": 2.992,
+        "raw": 6.9288,
+        "fifo": 6.9288
+      },
+      {
+        "pos": 5,
+        "type": "Car",
+        "group": "P5+",
+        "dist": 26.208,
+        "speed": 2.982,
+        "raw": 8.7887,
+        "fifo": 8.7887
+      }
+    ]
+  },
+  "clip_02_B": {
+    "status": "PASS",
+    "independent_clearance": 4.4132,
+    "api_clearance": 4.4132,
+    "clearance_match": true,
+    "independent_green": 7.53,
+    "api_green": 7.53,
+    "green_match": true,
+    "rows": [
+      {
+        "pos": 1,
+        "type": "Car",
+        "group": "P1",
+        "dist": 4.3,
+        "speed": 2.154,
+        "raw": 1.9963,
+        "fifo": 1.9963
+      },
+      {
+        "pos": 2,
+        "type": "Motorcycle",
+        "group": "P2",
+        "dist": 7.477,
+        "speed": 2.389,
+        "raw": 3.1298,
+        "fifo": 3.1298
+      },
+      {
+        "pos": 3,
+        "type": "Motorcycle",
+        "group": "P3-4",
+        "dist": 10.654,
+        "speed": 3.134,
+        "raw": 3.3995,
+        "fifo": 3.3995
+      },
+      {
+        "pos": 4,
+        "type": "Motorcycle",
+        "group": "P3-4",
+        "dist": 13.831,
+        "speed": 3.134,
+        "raw": 4.4132,
+        "fifo": 4.4132
+      }
+    ]
+  },
+  "clip_01": {
+    "status": "PASS",
+    "independent_clearance": 6.1601,
+    "api_clearance": 6.1601,
+    "clearance_match": true,
+    "independent_green": 9.28,
+    "api_green": 9.28,
+    "green_match": true,
+    "rows": [
+      {
+        "pos": 1,
+        "type": "Car",
+        "group": "P1",
+        "dist": 4.3,
+        "speed": 2.154,
+        "raw": 1.9963,
+        "fifo": 1.9963
+      },
+      {
+        "pos": 2,
+        "type": "Car",
+        "group": "P2",
+        "dist": 9.777,
+        "speed": 2.611,
+        "raw": 3.7445,
+        "fifo": 3.7445
+      },
+      {
+        "pos": 3,
+        "type": "Motorcycle",
+        "group": "P3-4",
+        "dist": 12.954,
+        "speed": 3.134,
+        "raw": 4.1334,
+        "fifo": 4.1334
+      },
+      {
+        "pos": 4,
+        "type": "Car",
+        "group": "P3-4",
+        "dist": 18.431,
+        "speed": 2.992,
+        "raw": 6.1601,
+        "fifo": 6.1601
+      }
+    ]
+  }
+}

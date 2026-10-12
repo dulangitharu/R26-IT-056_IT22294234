@@ -1,0 +1,424 @@
+[
+  {
+    "clip_name": "clip_02.mp4",
+    "status": "OK",
+    "snapshot_frame": 4090,
+    "snapshot_time_s": 136.333,
+    "fps": 30.0,
+    "roi_valid_vehicle_count": 4,
+    "ordered_vehicle_types": [
+      "Car",
+      "Motorcycle",
+      "Motorcycle",
+      "Motorcycle"
+    ],
+    "position_groups": [
+      "P1",
+      "P2",
+      "P3-4",
+      "P3-4"
+    ],
+    "rejected_roi_out_count": 2,
+    "rejected_roi_out_classes": [
+      "Car",
+      "Car"
+    ],
+    "predicted_clearance_s": 4.4132,
+    "predicted_green_s": 7.53,
+    "pairwise_iou_screen": [
+      {
+        "pair": "P1(Car) vs P2(Motorcycle)",
+        "iou": 0.0811,
+        "pct_a_covered_by_b": 10.4,
+        "pct_b_covered_by_a": 26.9,
+        "different_classes": true
+      },
+      {
+        "pair": "P1(Car) vs P3(Motorcycle)",
+        "iou": 0.0,
+        "pct_a_covered_by_b": 0.0,
+        "pct_b_covered_by_a": 0.0,
+        "different_classes": true
+      },
+      {
+        "pair": "P1(Car) vs P4(Motorcycle)",
+        "iou": 0.0,
+        "pct_a_covered_by_b": 0.0,
+        "pct_b_covered_by_a": 0.0,
+        "different_classes": true
+      },
+      {
+        "pair": "P2(Motorcycle) vs P3(Motorcycle)",
+        "iou": 0.0,
+        "pct_a_covered_by_b": 0.0,
+        "pct_b_covered_by_a": 0.0,
+        "different_classes": false
+      },
+      {
+        "pair": "P2(Motorcycle) vs P4(Motorcycle)",
+        "iou": 0.0,
+        "pct_a_covered_by_b": 0.0,
+        "pct_b_covered_by_a": 0.0,
+        "different_classes": false
+      },
+      {
+        "pair": "P3(Motorcycle) vs P4(Motorcycle)",
+        "iou": 0.0,
+        "pct_a_covered_by_b": 0.0,
+        "pct_b_covered_by_a": 0.0,
+        "different_classes": false
+      }
+    ],
+    "high_iou_flagged_pairs": [],
+    "snapshot_file": "replacement_candidates/candidate_clip_02_snapshot.jpg"
+  },
+  {
+    "clip_name": "clip_03.mp4",
+    "status": "OK",
+    "snapshot_frame": 60,
+    "snapshot_time_s": 2.002,
+    "fps": 29.975,
+    "roi_valid_vehicle_count": 2,
+    "ordered_vehicle_types": [
+      "Car",
+      "Motorcycle"
+    ],
+    "position_groups": [
+      "P1",
+      "P2"
+    ],
+    "rejected_roi_out_count": 2,
+    "rejected_roi_out_classes": [
+      "Car",
+      "Bus"
+    ],
+    "predicted_clearance_s": 3.1298,
+    "predicted_green_s": 6.25,
+    "pairwise_iou_screen": [
+      {
+        "pair": "P1(Car) vs P2(Motorcycle)",
+        "iou": 0.0,
+        "pct_a_covered_by_b": 0.0,
+        "pct_b_covered_by_a": 0.0,
+        "different_classes": true
+      }
+    ],
+    "high_iou_flagged_pairs": [],
+    "snapshot_file": "replacement_candidates/candidate_clip_03_snapshot.jpg"
+  },
+  {
+    "clip_name": "clip_04.mp4",
+    "status": "OK",
+    "snapshot_frame": 2130,
+    "snapshot_time_s": 71.0,
+    "fps": 30.0,
+    "roi_valid_vehicle_count": 4,
+    "ordered_vehicle_types": [
+      "Motorcycle",
+      "Motorcycle",
+      "Motorcycle",
+      "Motorcycle"
+    ],
+    "position_groups": [
+      "P1",
+      "P2",
+      "P3-4",
+      "P3-4"
+    ],
+    "rejected_roi_out_count": 3,
+    "rejected_roi_out_classes": [
+      "Car",
+      "Tuktuk",
+      "Motorcycle"
+    ],
+    "predicted_clearance_s": 3.6793,
+    "predicted_green_s": 6.8,
+    "pairwise_iou_screen": [
+      {
+        "pair": "P1(Motorcycle) vs P2(Motorcycle)",
+        "iou": 0.0,
+        "pct_a_covered_by_b": 0.0,
+        "pct_b_covered_by_a": 0.0,
+        "different_classes": false
+      },
+      {
+        "pair": "P1(Motorcycle) vs P3(Motorcycle)",
+        "iou": 0.0,
+        "pct_a_covered_by_b": 0.0,
+        "pct_b_covered_by_a": 0.0,
+        "different_classes": false
+      },
+      {
+        "pair": "P1(Motorcycle) vs P4(Motorcycle)",
+        "iou": 0.0,
+        "pct_a_covered_by_b": 0.0,
+        "pct_b_covered_by_a": 0.0,
+        "different_classes": false
+      },
+      {
+        "pair": "P2(Motorcycle) vs P3(Motorcycle)",
+        "iou": 0.0,
+        "pct_a_covered_by_b": 0.0,
+        "pct_b_covered_by_a": 0.0,
+        "different_classes": false
+      },
+      {
+        "pair": "P2(Motorcycle) vs P4(Motorcycle)",
+        "iou": 0.0,
+        "pct_a_covered_by_b": 0.0,
+        "pct_b_covered_by_a": 0.0,
+        "different_classes": false
+      },
+      {
+        "pair": "P3(Motorcycle) vs P4(Motorcycle)",
+        "iou": 0.0,
+        "pct_a_covered_by_b": 0.0,
+        "pct_b_covered_by_a": 0.0,
+        "different_classes": false
+      }
+    ],
+    "high_iou_flagged_pairs": [],
+    "snapshot_file": "replacement_candidates/candidate_clip_04_snapshot.jpg"
+  },
+  {
+    "clip_name": "clip_05.mp4",
+    "status": "OK",
+    "snapshot_frame": 50,
+    "snapshot_time_s": 1.667,
+    "fps": 29.986,
+    "roi_valid_vehicle_count": 2,
+    "ordered_vehicle_types": [
+      "Truck",
+      "Bus"
+    ],
+    "position_groups": [
+      "P1",
+      "P2"
+    ],
+    "rejected_roi_out_count": 2,
+    "rejected_roi_out_classes": [
+      "Bus",
+      "Car"
+    ],
+    "predicted_clearance_s": 5.1959,
+    "predicted_green_s": 8.32,
+    "pairwise_iou_screen": [
+      {
+        "pair": "P1(Truck) vs P2(Bus)",
+        "iou": 0.0,
+        "pct_a_covered_by_b": 0.0,
+        "pct_b_covered_by_a": 0.0,
+        "different_classes": true
+      }
+    ],
+    "high_iou_flagged_pairs": [],
+    "snapshot_file": "replacement_candidates/candidate_clip_05_snapshot.jpg"
+  },
+  {
+    "clip_name": "clip_06.mp4",
+    "status": "OK",
+    "snapshot_frame": 6330,
+    "snapshot_time_s": 211.0,
+    "fps": 30.0,
+    "roi_valid_vehicle_count": 4,
+    "ordered_vehicle_types": [
+      "Motorcycle",
+      "Car",
+      "Bus",
+      "Motorcycle"
+    ],
+    "position_groups": [
+      "P1",
+      "P2",
+      "P3-4",
+      "P3-4"
+    ],
+    "rejected_roi_out_count": 2,
+    "rejected_roi_out_classes": [
+      "Car",
+      "Car"
+    ],
+    "predicted_clearance_s": 7.2211,
+    "predicted_green_s": 10.34,
+    "pairwise_iou_screen": [
+      {
+        "pair": "P1(Motorcycle) vs P2(Car)",
+        "iou": 0.0,
+        "pct_a_covered_by_b": 0.0,
+        "pct_b_covered_by_a": 0.0,
+        "different_classes": true
+      },
+      {
+        "pair": "P1(Motorcycle) vs P3(Bus)",
+        "iou": 0.0,
+        "pct_a_covered_by_b": 0.0,
+        "pct_b_covered_by_a": 0.0,
+        "different_classes": true
+      },
+      {
+        "pair": "P1(Motorcycle) vs P4(Motorcycle)",
+        "iou": 0.0,
+        "pct_a_covered_by_b": 0.0,
+        "pct_b_covered_by_a": 0.0,
+        "different_classes": false
+      },
+      {
+        "pair": "P2(Car) vs P3(Bus)",
+        "iou": 0.0,
+        "pct_a_covered_by_b": 0.0,
+        "pct_b_covered_by_a": 0.0,
+        "different_classes": true
+      },
+      {
+        "pair": "P2(Car) vs P4(Motorcycle)",
+        "iou": 0.0,
+        "pct_a_covered_by_b": 0.0,
+        "pct_b_covered_by_a": 0.0,
+        "different_classes": true
+      },
+      {
+        "pair": "P3(Bus) vs P4(Motorcycle)",
+        "iou": 0.0,
+        "pct_a_covered_by_b": 0.0,
+        "pct_b_covered_by_a": 0.0,
+        "different_classes": true
+      }
+    ],
+    "high_iou_flagged_pairs": [],
+    "snapshot_file": "replacement_candidates/candidate_clip_06_snapshot.jpg"
+  },
+  {
+    "clip_name": "clip_07.mp4",
+    "status": "OK",
+    "snapshot_frame": 860,
+    "snapshot_time_s": 76.355,
+    "fps": 11.263,
+    "roi_valid_vehicle_count": 2,
+    "ordered_vehicle_types": [
+      "Car",
+      "Car"
+    ],
+    "position_groups": [
+      "P1",
+      "P2"
+    ],
+    "rejected_roi_out_count": 1,
+    "rejected_roi_out_classes": [
+      "Car"
+    ],
+    "predicted_clearance_s": 3.7445,
+    "predicted_green_s": 6.86,
+    "pairwise_iou_screen": [
+      {
+        "pair": "P1(Car) vs P2(Car)",
+        "iou": 0.0914,
+        "pct_a_covered_by_b": 15.3,
+        "pct_b_covered_by_a": 18.5,
+        "different_classes": false
+      }
+    ],
+    "high_iou_flagged_pairs": [],
+    "snapshot_file": "replacement_candidates/candidate_clip_07_snapshot.jpg"
+  },
+  {
+    "clip_name": "clip_08.mp4",
+    "status": "OK",
+    "snapshot_frame": 2430,
+    "snapshot_time_s": 81.066,
+    "fps": 29.976,
+    "roi_valid_vehicle_count": 3,
+    "ordered_vehicle_types": [
+      "Car",
+      "Car",
+      "Bus"
+    ],
+    "position_groups": [
+      "P1",
+      "P2",
+      "P3-4"
+    ],
+    "rejected_roi_out_count": 2,
+    "rejected_roi_out_classes": [
+      "Motorcycle",
+      "Truck"
+    ],
+    "predicted_clearance_s": 3.9211,
+    "predicted_green_s": 7.04,
+    "pairwise_iou_screen": [
+      {
+        "pair": "P1(Car) vs P2(Car)",
+        "iou": 0.0,
+        "pct_a_covered_by_b": 0.0,
+        "pct_b_covered_by_a": 0.0,
+        "different_classes": false
+      },
+      {
+        "pair": "P1(Car) vs P3(Bus)",
+        "iou": 0.0,
+        "pct_a_covered_by_b": 0.0,
+        "pct_b_covered_by_a": 0.0,
+        "different_classes": true
+      },
+      {
+        "pair": "P2(Car) vs P3(Bus)",
+        "iou": 0.0,
+        "pct_a_covered_by_b": 0.0,
+        "pct_b_covered_by_a": 0.0,
+        "different_classes": true
+      }
+    ],
+    "high_iou_flagged_pairs": [],
+    "snapshot_file": "replacement_candidates/candidate_clip_08_snapshot.jpg"
+  },
+  {
+    "clip_name": "clip_10.mp4",
+    "status": "OK",
+    "snapshot_frame": 330,
+    "snapshot_time_s": 11.013,
+    "fps": 29.964,
+    "roi_valid_vehicle_count": 3,
+    "ordered_vehicle_types": [
+      "Car",
+      "Car",
+      "Car"
+    ],
+    "position_groups": [
+      "P1",
+      "P2",
+      "P3-4"
+    ],
+    "rejected_roi_out_count": 3,
+    "rejected_roi_out_classes": [
+      "Car",
+      "Motorcycle",
+      "Car"
+    ],
+    "predicted_clearance_s": 5.0983,
+    "predicted_green_s": 8.22,
+    "pairwise_iou_screen": [
+      {
+        "pair": "P1(Car) vs P2(Car)",
+        "iou": 0.011,
+        "pct_a_covered_by_b": 1.8,
+        "pct_b_covered_by_a": 2.6,
+        "different_classes": false
+      },
+      {
+        "pair": "P1(Car) vs P3(Car)",
+        "iou": 0.0,
+        "pct_a_covered_by_b": 0.0,
+        "pct_b_covered_by_a": 0.0,
+        "different_classes": false
+      },
+      {
+        "pair": "P2(Car) vs P3(Car)",
+        "iou": 0.0117,
+        "pct_a_covered_by_b": 1.8,
+        "pct_b_covered_by_a": 3.1,
+        "different_classes": false
+      }
+    ],
+    "high_iou_flagged_pairs": [],
+    "snapshot_file": "replacement_candidates/candidate_clip_10_snapshot.jpg"
+  }
+]

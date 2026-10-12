@@ -1,0 +1,2 @@
+valid_cases,mae_s,rmse_s,mean_signed_error_s,min_absolute_error_s,max_absolute_error_s
+3,2.511,4.218,-2.511,0.087,7.304

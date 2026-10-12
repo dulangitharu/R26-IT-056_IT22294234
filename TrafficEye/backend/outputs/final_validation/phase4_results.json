@@ -1,0 +1,94 @@
+{
+  "clip_02_A": {
+    "all_pass": true,
+    "checks": {
+      "vehicle_count_eq_len_ordered_queue": true,
+      "breakdown_sum_eq_vehicle_count": true,
+      "all_lengths_positive": true,
+      "all_speeds_positive": true,
+      "all_distances_nonneg": true,
+      "all_raw_times_nonneg": true,
+      "all_fifo_times_nonneg": true,
+      "fifo_never_decreases": true,
+      "distances_strictly_increasing": true,
+      "clearance_finite_positive": true,
+      "green_finite_positive": true,
+      "green_eq_clearance_plus_3.12": true,
+      "queue_clearance_eq_max_fifo": true,
+      "average_gap_is_1.177": true,
+      "safety_buffer_is_3.12": true,
+      "method_is_queue_position_based": true,
+      "no_nan_or_infinity": true,
+      "bad_values_found": []
+    }
+  },
+  "clip_11": {
+    "all_pass": true,
+    "checks": {
+      "vehicle_count_eq_len_ordered_queue": true,
+      "breakdown_sum_eq_vehicle_count": true,
+      "all_lengths_positive": true,
+      "all_speeds_positive": true,
+      "all_distances_nonneg": true,
+      "all_raw_times_nonneg": true,
+      "all_fifo_times_nonneg": true,
+      "fifo_never_decreases": true,
+      "distances_strictly_increasing": true,
+      "clearance_finite_positive": true,
+      "green_finite_positive": true,
+      "green_eq_clearance_plus_3.12": true,
+      "queue_clearance_eq_max_fifo": true,
+      "average_gap_is_1.177": true,
+      "safety_buffer_is_3.12": true,
+      "method_is_queue_position_based": true,
+      "no_nan_or_infinity": true,
+      "bad_values_found": []
+    }
+  },
+  "clip_02_B": {
+    "all_pass": true,
+    "checks": {
+      "vehicle_count_eq_len_ordered_queue": true,
+      "breakdown_sum_eq_vehicle_count": true,
+      "all_lengths_positive": true,
+      "all_speeds_positive": true,
+      "all_distances_nonneg": true,
+      "all_raw_times_nonneg": true,
+      "all_fifo_times_nonneg": true,
+      "fifo_never_decreases": true,
+      "distances_strictly_increasing": true,
+      "clearance_finite_positive": true,
+      "green_finite_positive": true,
+      "green_eq_clearance_plus_3.12": true,
+      "queue_clearance_eq_max_fifo": true,
+      "average_gap_is_1.177": true,
+      "safety_buffer_is_3.12": true,
+      "method_is_queue_position_based": true,
+      "no_nan_or_infinity": true,
+      "bad_values_found": []
+    }
+  },
+  "clip_01": {
+    "all_pass": true,
+    "checks": {
+      "vehicle_count_eq_len_ordered_queue": true,
+      "breakdown_sum_eq_vehicle_count": true,
+      "all_lengths_positive": true,
+      "all_speeds_positive": true,
+      "all_distances_nonneg": true,
+      "all_raw_times_nonneg": true,
+      "all_fifo_times_nonneg": true,
+      "fifo_never_decreases": true,
+      "distances_strictly_increasing": true,
+      "clearance_finite_positive": true,
+      "green_finite_positive": true,
+      "green_eq_clearance_plus_3.12": true,
+      "queue_clearance_eq_max_fifo": true,
+      "average_gap_is_1.177": true,
+      "safety_buffer_is_3.12": true,
+      "method_is_queue_position_based": true,
+      "no_nan_or_infinity": true,
+      "bad_values_found": []
+    }
+  }
+}

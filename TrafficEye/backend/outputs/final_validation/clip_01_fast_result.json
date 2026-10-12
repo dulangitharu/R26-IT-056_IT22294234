@@ -1,0 +1,6 @@
+{
+  "clip_key": "clip_01",
+  "status": "AMBIGUOUS",
+  "reason": "no ByteTrack detection within 60px of Pn at the snapshot frame even after a 60-frame warm-up (closest=498.78652748445404)",
+  "sanity_match": true
+}

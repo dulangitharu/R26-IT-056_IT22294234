@@ -1,0 +1,74 @@
+[
+  {
+    "clip_name": "clip_01.mp4",
+    "status": "OK",
+    "snapshot_frame": 280,
+    "snapshot_time_s": 26.736,
+    "fps": 10.473,
+    "vehicle_count": 4,
+    "rejected_roi_out_count": 3,
+    "ordered_vehicle_types": [
+      "Car",
+      "Car",
+      "Motorcycle",
+      "Car"
+    ],
+    "position_groups": [
+      "P1",
+      "P2",
+      "P3-4",
+      "P3-4"
+    ],
+    "predicted_clearance_s": 6.1601,
+    "predicted_green_s": 9.28,
+    "snapshot_file": "validation_clip_01_snapshot.jpg"
+  },
+  {
+    "clip_name": "clip_09.mp4",
+    "status": "OK",
+    "snapshot_frame": 1230,
+    "snapshot_time_s": 41.015,
+    "fps": 29.989,
+    "vehicle_count": 3,
+    "rejected_roi_out_count": 2,
+    "ordered_vehicle_types": [
+      "Truck",
+      "Bus",
+      "Truck"
+    ],
+    "position_groups": [
+      "P1",
+      "P2",
+      "P3-4"
+    ],
+    "predicted_clearance_s": 13.6939,
+    "predicted_green_s": 16.81,
+    "snapshot_file": "validation_clip_09_snapshot.jpg"
+  },
+  {
+    "clip_name": "clip_11.mp4",
+    "status": "OK",
+    "snapshot_frame": 3040,
+    "snapshot_time_s": 101.322,
+    "fps": 30.003,
+    "vehicle_count": 5,
+    "rejected_roi_out_count": 2,
+    "ordered_vehicle_types": [
+      "Car",
+      "Car",
+      "Car",
+      "Car",
+      "Car"
+    ],
+    "position_groups": [
+      "P1",
+      "P2",
+      "P3-4",
+      "P3-4",
+      "P5+"
+    ],
+    "predicted_clearance_s": 8.7887,
+    "predicted_green_s": 11.91,
+    "snapshot_file": "validation_clip_11_snapshot.jpg"
+  }
+]

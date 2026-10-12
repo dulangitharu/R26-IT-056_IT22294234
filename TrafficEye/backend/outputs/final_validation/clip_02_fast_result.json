@@ -1,0 +1,28 @@
+{
+  "clip_key": "clip_02",
+  "status": "OBSERVED",
+  "sanity_match": true,
+  "clip_name": "clip_02.mp4",
+  "snapshot_frame": 4090,
+  "snapshot_time_s": 136.333,
+  "vehicle_count": 4,
+  "ordered_vehicle_types": [
+    "Car",
+    "Motorcycle",
+    "Motorcycle",
+    "Motorcycle"
+  ],
+  "predicted_clearance_s": 4.4132,
+  "predicted_green_s": 7.53,
+  "last_queue_position": "P4",
+  "last_vehicle_type": "Motorcycle",
+  "track_id": 396,
+  "match_distance_px": 0.0,
+  "observed_crossing_frame": 4225,
+  "observed_crossing_time_s": 140.833,
+  "observed_clearance_s": 4.5,
+  "signed_error_s": -0.087,
+  "absolute_error_s": 0.087,
+  "measurement_status": "OBSERVED",
+  "evidence_image": "outputs\\final_validation\\observed_evidence\\clip_02_crossing.jpg"
+}

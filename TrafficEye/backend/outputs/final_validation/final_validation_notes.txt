@@ -1,0 +1,25 @@
+TrafficEye — Prototype Observed-Clearance Validation Notes
+(prototype observed-clearance validation, NOT independent held-out validation)
+
+1. clip_01:
+   The locked representative snapshot occurred while the queue was still stationary.
+   Therefore the snapshot-to-crossing measurement of 13.464 s includes pre-discharge waiting time.
+   A diagnostic discharge-onset-to-crossing interval was approximately 5.3 s, which is closer to the predicted 6.1601 s.
+   The official CSV value remains unchanged.
+
+2. clip_02:
+   crossing evidence verified from sequential frame extraction.
+
+3. clip_11:
+   crossing evidence verified from sequential frame extraction.
+
+4. Evidence-image issue:
+   cv2.CAP_PROP_POS_FRAMES seeking was found unreliable for these video files.
+   Final crossing evidence images were therefore generated using sequential frame reads.
+
+5. clip_09:
+   excluded from prototype observed-clearance validation because cross-class duplication caused one physical vehicle to be represented by two overlapping detections in the representative queue snapshot.
+
+6. Validation wording:
+   This work is described as "prototype observed-clearance validation".
+   It must not be described as "independent held-out validation".
