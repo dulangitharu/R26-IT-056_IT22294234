@@ -1,0 +1,6 @@
+video_name,vehicle_id,vehicle_type,line_a_frame,line_a_time_s,line_b_frame,line_b_time_s,travel_time_s,speed_mps
+clip_10.mp4,17,Car,185,6.174,283,9.445,3.271,2.14
+clip_10.mp4,21,Car,274,9.144,371,12.382,3.238,2.162
+clip_10.mp4,28,Car,358,11.948,439,14.651,2.703,2.59
+clip_10.mp4,30,Car,439,14.651,516,17.221,2.57,2.724
+clip_10.mp4,35,Bus,519,17.321,604,20.158,2.837,2.467

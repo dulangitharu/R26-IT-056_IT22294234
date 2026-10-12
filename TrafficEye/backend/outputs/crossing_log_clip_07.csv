@@ -1,0 +1,5 @@
+vehicle_id,vehicle_type,frame_number,pass_time_seconds
+67,Car,1034,91.804
+71,Car,1035,91.892
+76,Truck,1173,104.145
+75,Bus,1309,116.22
