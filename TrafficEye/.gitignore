@@ -1,0 +1,16 @@
+backend/myfirstproject/
+venv/
+.venv/
+
+__pycache__/
+*.pyc
+*.pyo
+
+backend/uploads/
+uploads/
+
+*.pt
+
+.vscode/
+.DS_Store
+Thumbs.db
