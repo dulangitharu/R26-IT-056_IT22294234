@@ -1,0 +1,2 @@
+crossing_log_files_read,total_gap_events,valid_gap_count,first_crossing_count,removed_too_small_count,removed_too_large_count,invalid_gap_count,median_gap_seconds,p85_gap_seconds,p90_gap_seconds,raw_safety_buffer_seconds,final_safety_buffer_seconds
+11,344,289,11,17,24,3,2.9,6.02,6.517,3.12,3.12

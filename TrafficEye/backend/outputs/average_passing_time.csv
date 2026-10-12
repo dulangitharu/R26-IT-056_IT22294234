@@ -1,0 +1,7 @@
+vehicle_type,count,avg_passing_time_s,median_gap_s,trimmed_mean_gap_s,min_gap_s,max_gap_s
+Car,106,3.63,3.25,3.46,0.53,8.8
+Motorcycle,79,2.88,2.2,2.58,0.6,9.1
+Bus,38,3.32,2.9,3.26,0.53,6.63
+Tuktuk,37,3.71,3.07,3.58,0.73,8.8
+Truck,28,4.0,3.47,3.9,0.83,8.37
+Ambulance,1,7.07,7.07,7.07,7.07,7.07
